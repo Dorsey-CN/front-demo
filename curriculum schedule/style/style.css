@@ -1,0 +1,44 @@
+/*样式重置*/
+
+p,
+table,
+tr,
+td,
+th {
+    margin: 0;
+    padding: 0;
+}
+
+
+/**对于table样式的控制*/
+
+table {
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+th,
+td {
+    text-align: center;
+}
+
+th {
+    color: #606060;
+    height: 30px;
+}
+
+td {
+    color: #fff;
+    width: 60px;
+}
+
+.title td {
+    color: #606060;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Microsoft Yahei", "微软雅黑";
+    color: #09798D;
+}
