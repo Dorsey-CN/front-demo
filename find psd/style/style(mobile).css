@@ -1,0 +1,305 @@
+/*样式重置*/
+
+html,
+body,
+div,
+ul,
+li,
+p,
+span,
+a,
+h3,
+h4,
+h5,
+img,
+table,
+tbody,
+tr,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial;
+    background-color: #ECEFF2;
+    font-size: 14px;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+input {
+    border: 0;
+    outline: none;
+}
+
+i {
+    font-style: normal;
+}
+
+
+/*清除浮动*/
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+
+/*通用样式*/
+
+.boxCenter {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hr_15 {
+    height: 15px;
+    overflow: hidden;
+}
+
+
+/*主体样式*/
+
+.head {
+    height: 70px;
+    background-color: #31A4E5;
+}
+
+.head .logo,
+.logo img,
+.logo p {
+    float: left;
+}
+
+.head .logo {
+    padding: 10px 0 10px 10px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo p {
+    margin-left: 10px;
+    color: #fff;
+}
+
+.logo p span {
+    font-size: 26px;
+}
+
+.head .menu {
+    float: right;
+    padding: 15px;
+}
+
+.menu li {
+    width: 45px;
+    height: 10px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+.ad-img {
+    position: relative;
+}
+
+.ad-img img {
+    width: 100%;
+    height: 85px;
+}
+
+.ad-img p {
+    position: absolute;
+    color: #EB6100;
+    font-size: 20px;
+    top: 40%;
+    left: 20%;
+}
+
+.content {
+    padding: 0 5px;
+}
+
+.content table {
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+
+.doctor,
+.technology,
+.symptoms,
+.knowledge,
+.order {
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.doctor table tr {
+    background-color: #42B56A;
+}
+
+.content table td {
+    font-family: "Microsoft" "微软雅黑";
+    width: 140px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.content td img {
+    margin-bottom: 5px;
+}
+
+.content td a {
+    color: #fff;
+}
+
+.content td a:hover {
+    text-decoration: underline;
+}
+
+.technology table tr {
+    background-color: #EFA311;
+}
+
+.symptoms table tr {
+    background-color: #E3594E;
+}
+
+.knowledge table tr {
+    background-color: #AE5DA1;
+}
+
+.order table tr {
+    background-color: #31A4E5;
+}
+
+.introduce {
+    background-color: #fff;
+    overflow: hidden;
+    border: 1px solid #B5B5B5;
+    margin: 0 5px;
+}
+
+.introduce h3 {
+    color: #31A4E5;
+    margin-bottom: 5px;
+}
+
+.introduce span {
+    font-size: 12px;
+}
+
+.hot-introduce,
+.day-introduce,
+.introduce .img-box,
+.introduce p {
+    float: left;
+}
+
+.introduce img {
+    width: 42px;
+    height: 43px;
+    margin-right: 10px;
+}
+
+.hot-introduce,
+.day-introduce {
+    width: 43%;
+    padding: 20px 10px;
+}
+
+.hot-introduce {
+    border-right: 1px solid #B5B5B5;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.footer-nav a {
+    font-family: "Microsoft YaHei", "微软雅黑";
+    color: #333;
+}
+
+.nav-list1,
+.nav-list2 {
+    overflow: hidden;
+}
+
+.nav-list1 li {
+    width: 20%;
+    float: left;
+}
+
+.nav-list1 li p {
+    padding: 5px;
+}
+
+.nav-list2 li {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.nav-list2 .bd-right {
+    padding-right: 5px;
+    border-right: 2px solid #333;
+}
+
+.contact {
+    background-color: #31A4E5;
+    margin-top: 25px;
+}
+
+.contact-list {
+    overflow: hidden;
+}
+
+.contact-list li {
+    width: 21%;
+    float: left;
+    border-left: 1px solid #75C2EE;
+    border-right: 1px solid #3190C6;
+    padding: 10px 0 10px 11px;
+}
+
+.contact-list li a {
+    font-family: "Microsoft YaHei", "微软雅黑";
+    color: #fff;
+}
+
+.contact-list li img {
+    height: 50px;
+}
+
+.contact-list li p {
+    margin-top: 5px;
+}
+
+.contact-list .first {
+    border-left: 0;
+}
+
+.contact-list .last {
+    border-right: 0;
+}

@@ -1,0 +1,2755 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <title>极客学院IT在线教育平台</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <div class="top-bar clearfix">
+            <div class="box-width">
+                <!-- 头部左侧logo区 -->
+                <div class="left-area">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="极客学院">
+                    </div>
+                </div>
+                <!-- 头部右侧搜索及用户区 -->
+                <div class="right-area clearfix">
+                    <!-- 搜索区 -->
+                    <div class="search-box clearfix">
+                        <div class="search-input">
+                            <input type="text" value="搜索课程、问答或Wiki" id="search-input" />
+                        </div>
+                        <div class="search-btn">
+                            <input type="button" id="search-btn" />
+                        </div>
+                        <div class="tags" id="tags">
+                            <a href="#">Android</a>
+                            <a href="#">IOS</a>
+                            <a href="#">HTML5</a>
+                        </div>
+                    </div>
+                    <!-- 用户区 -->
+                    <div class="user-area clearfix">
+                        <div class="message-box">
+                            <span class="message"><em></em></span>
+                            <i class="line">|</i>
+                        </div>
+                        <div class="my-course-box">
+                            <span class="my-course"><a href="#">我的课程</a></span>
+                            <i class="line">|</i>
+                        </div>
+                        <div class="vip-box">
+                            <span class="vip"><a href="#">续费VIP</a></span>
+                        </div>
+                        <div class="user-box" id="user-box">
+                            <span class="user" id="user"><a href="#">Dorsey<em id="arrow"></em></a></span>
+                            <div class="user-menu" id="user-menu">
+                                <i class="arrow"></i>
+                                <ul>
+                                    <li>
+                                        <a href="#">个人主页</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">个人中心</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的课程</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的就业班</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">免费VIP</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的F码</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">账号设置</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">一键绑定</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">退出</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 头部结束 -->
+
+        <!-- 主导航区 -->
+        <div class="nav">
+            <div class="box-width clearfix">
+                <div class="left-area">
+                    <div class="nav-box" id="nav-box">
+                        <ul class="nav-list clearfix">
+                            <li class="first-item"><a href="#">首页</a></li>
+                            <li class="first-item" id="first-item2"><a href="#">职业课程</a></li>
+                            <li class="first-item" id="first-item3"><a href="#">就业学习</a></li>
+                            <li class="first-item" id="first-item4"><a href="#">极客社区</a></li>
+                            <li class="first-item" id="first-item5"><a href="#">极客+</a></li>
+                        </ul>
+                        <div class="seond-list-box clearfix">
+                            <div class="seond-list" id="second-list1">
+                                <i class="arrows" id="arrows1"></i>
+                                <ul>
+                                    <li class="second-item"><a href="#">课程库</a></li>
+                                    <li class="second-item"><a href="#">知识体系图</a></li>
+                                    <li class="second-item"><a href="#">职业路径图</a></li>
+                                    <li class="second-item"><a href="#">系列课程</a></li>
+                                </ul>
+                            </div>
+                            <div class="seond-list" id="second-list2">
+                                <i class="arrows"></i>
+                                <ul>
+                                    <li class="second-item"><a href="#">Web前端开发</a></li>
+                                    <li class="second-item"><a href="#">Andriod开发</a></li>
+                                    <li class="second-item"><a href="#">PHP开发</a></li>
+                                    <li class="second-item"><a href="#">iOS开发</a></li>
+                                    <li class="second-item"><a href="#">JavaWeb开发</a></li>
+                                </ul>
+                            </div>
+                            <div class="seond-list" id="second-list13">
+                                <i class="arrows"></i>
+                                <ul>
+                                    <li class="second-item"><a href="#">Wiki</a></li>
+                                    <li class="second-item"><a href="#">技术问答</a></li>
+                                    <li class="second-item"><a href="#">社群</a></li>
+                                    <li class="second-item"><a href="#">资源共享</a></li>
+                                </ul>
+                            </div>
+                            <div class="seond-list" id="second-list4">
+                                <i class="arrows"></i>
+                                <ul>
+                                    <li class="second-item"><a href="#">高校合作</a></li>
+                                    <li class="second-item"><a href="#">极客人才联盟</a></li>
+                                    <li class="second-item"><a href="#">布道师招募</a></li>
+                                    <li class="second-item"><a href="#">实战教练招募</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-area">
+                    <div class="user-need">
+                        <a href="#">
+                            <span class="">
+                               <img src="images/vip.png" alt="VIP会员">
+                               VIP会员
+                           </span>
+                        </a>
+                        <a href="#">
+                            <span class="">
+                               <img src="images/course.png" alt="求课程
+                               ">
+                               求课程
+                           </span>
+                        </a>
+                        <a href="#">
+                            <span class="">
+                               <img src="images/download.png" alt="APP下载">
+                               APP下载
+                           </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- nav结束 -->
+        <div class="pager">
+            <div class="box-width clearfix">
+                <!-- 课程分类区 -->
+                <div class="lesson-menu">
+                    <ul class="menu-list">
+                        <li class="first-menu">
+                            <a href="#" class="first-level">移动开发</a>
+                            <ul class="sub-list">
+                                <li>
+                                    <span class="list-head"><a href="#">应用开发</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">Andriod</a>
+                                        <span class="line">|</span>
+                                    <a href="#">iOS</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">游戏开发</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">Cocos</a>
+                                        <span class="line">|</span>
+                                    <a href="#">Unity3D</a>
+                                    <span class="line">|</span>
+                                    <a href="#">SpriteKit 2D</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Unreal</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">常用框架</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">Cordova</a>
+                                        <span class="line">|</span>
+                                    <a href="#">React Native</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="first-level">后端开发</a>
+                            <ul class="sub-list">
+                                <li>
+                                    <span class="list-head"><a href="#">Python</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">Python基础</a>
+                                        <span class="line">|</span>
+                                    <a href="#">web2py</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Django</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Flask</a>
+                                    <span class="line">|</span>
+                                    <a href="#">GUI</a>
+                                    </span>
+                                    <span class="line">|</span>
+                                    <a href="#">数据挖掘与分析</a>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">PHP</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">PHP基础</a>
+                                        <span class="line">|</span>
+                                    <a href="#">YII</a>
+                                    <span class="line">|</span>
+                                    <a href="#">ThinkPHP</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Laravel</a>
+                                    </span>
+                                    <span class="line">|</span>
+                                    <a href="#">WordPress</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Phalcon</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Apache</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Facebook Hack</a>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">Node.js</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">Node.js基础</a>
+                                        <span class="line">|</span>
+                                    <a href="#">express</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Meteor</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Hexo</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">ASP.NET</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">C#</a>
+                                        <span class="line">|</span>
+                                    <a href="#">ASP.NET MVC</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Entity Framework</a>
+                                    <span class="line">|</span>
+                                    <a href="#">WPF</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="first-level">前端开发</a>
+                            <ul class="sub-list">
+                                <li>
+                                    <span class="list-head"><a href="#">前端基础</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">HTML</a>
+                                        <span class="line">|</span>
+                                    <a href="#">CSS</a>
+                                    <span class="line">|</span>
+                                    <a href="#">JavaScript</a>
+                                    <span class="line">|</span>
+                                    <a href="#">HTML5</a>
+                                    <span class="line">|</span>
+                                    <a href="#">CSS3</a>
+                                    </span>
+                                    <span class="line">|</span>
+                                    <a href="#">技术前瞻</a>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">前端进阶</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">Typescript</a>
+                                        <span class="line">|</span>
+                                    <a href="#">前端安全</a>
+                                    <span class="line">|</span>
+                                    <a href="#">项目实战</a>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">前端框架</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">jQuery</a>
+                                        <span class="line">|</span>
+                                    <a href="#">jQuery UI</a>
+                                    <span class="line">|</span>
+                                    <a href="#">jQuery Mobile</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Ext JS</a>
+                                    </span>
+                                    <span class="line">|</span>
+                                    <a href="#">AngularJS</a>
+                                    <span class="line">|</span>
+                                    <a href="#">ReactJS</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Bootstrap</a>
+                                    <span class="line">|</span>
+                                    <a href="#">React Native</a>
+                                    <span class="line">|</span>
+                                    <a href="#">backbone</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Three.js</a>
+                                    <span class="line">|</span>
+                                    <a href="#">MooTools</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Compass</a>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">HTML5游戏</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">Canvas</a>
+                                        <span class="line">|</span>
+                                    <a href="#">SVG</a>
+                                    <span class="line">|</span>
+                                    <a href="#">WebGL</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Cocos2d-js</a>
+                                    </span>
+                                    <span class="line">|</span>
+                                    <a href="#">CreateJS</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Flash</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Unreal</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Egret</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Phaser</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="first-level">基础知识</a>
+                            <ul class="sub-list">
+                                <li>
+                                    <span class="list-head"><a href="#">基础语言</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">C</a>
+                                        <span class="line">|</span>
+                                    <a href="#">C++</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Objective-C</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Swift</a>
+                                    <span class="line">|</span>
+                                    <a href="#">C#</a>
+                                    </span>
+                                    <span class="line">|</span>
+                                    <a href="#">Java</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Perl</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Shell</a>
+                                    <span class="line">|</span>
+                                    <a href="#">QT</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Scala</a>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">计算机基础</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">计算机组成原理</a>
+                                        <span class="line">|</span>
+                                    <a href="#">网络工程</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Word</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Excel</a>
+                                    <span class="line">|</span>
+                                    <a href="#">PowerPoint</a>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">开发基础</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">算法基础</a>
+                                        <span class="line">|</span>
+                                    <a href="#">数据结构</a>
+                                    <span class="line">|</span>
+                                    <a href="#">设计模式</a>
+                                    <span class="line">|</span>
+                                    <a href="#">软件工程</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">开发工具</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">Git/Github</a>
+                                        <span class="line">|</span>
+                                    <a href="#">SVN</a>
+                                    <span class="line">|</span>
+                                    <a href="#">VI</a>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">开放标准</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">OpenCL</a>
+                                        <span class="line">|</span>
+                                    <a href="#">Open XML</a>
+                                    <span class="line">|</span>
+                                    <a href="#">OpenGL GLES</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="first-level">云计算&大数据</a>
+                            <ul class="sub-list">
+                                <li>
+                                    <span class="list-head"><a href="#">云计算</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">OpenStack</a>
+                                        <span class="line">|</span>
+                                    <a href="#">Docker</a>
+                                    <span class="line">|</span>
+                                    <a href="#">CloudStack</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Windows Azure</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Iaas</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">大数据</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">Hadoop</a>
+                                        <span class="line">|</span>
+                                    <a href="#">Storm</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Hive</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Flume</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Kafka</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Zookeeper</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Hbase</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Spark</a>
+                                    <span class="line">|</span>
+                                    <a href="#">信息检索</a>
+                                    <span class="line">|</span>
+                                    <a href="#">数据分析</a>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">虚拟化</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">VMware</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">云平台</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">Git/腾讯云</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="first-level">智能硬件&物联网</a>
+                            <ul class="sub-list">
+                                <li>
+                                    <span class="list-head"><a href="#">硬件架构</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">c51</a>
+                                        <span class="line">|</span>
+                                    <a href="#">ARM</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Keil</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Cortex-M</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Cortex-A</a>
+                                    </span>
+                                    <span class="line">|</span>
+                                    <a href="#">AVR</a>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">物联网操作系统</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">RTOS</a>
+                                        <span class="line">|</span>
+                                    <a href="#">Andriod Wear</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Apple Watchkit</a>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">开源硬件平台</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">Arduino</a>
+                                        <span class="line">|</span>
+                                    <a href="#">树莓派</a>
+                                    <span class="line">|</span>
+                                    <a href="#">mbed</a>
+                                    <span class="line">|</span>
+                                    <a href="#">GoKit</a>
+                                    <span class="line">|</span>
+                                    <a href="#">LeMaker Guitar</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">通信链接技术</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">无线wifi</a>
+                                        <span class="line">|</span>
+                                    <a href="#">移动通信</a>
+                                    <span class="line">|</span>
+                                    <a href="#">蓝牙</a>
+                                    <span class="line">|</span>
+                                    <a href="#">NFC</a>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">信息感知处理技术</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">传感器</a>
+                                        <span class="line">|</span>
+                                    <a href="#">数据挖掘</a>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">人机交互技术</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">语音识别</a>
+                                        <span class="line">|</span>
+                                    <a href="#">人脸识别</a>
+                                    <span class="line">|</span>
+                                    <a href="#">手势识别</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="first-level">数据库</a>
+                            <ul class="sub-list">
+                                <li>
+                                    <span class="list-head"><a href="#">SQL</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">MySQL</a>
+                                        <span class="line">|</span>
+                                    <a href="#">SQL Server</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Oracle</a>
+                                    <span class="line">|</span>
+                                    <a href="#">SQLite</a>
+                                    <span class="line">|</span>
+                                    <a href="#">PostgreSQL</a>
+                                    </span>
+                                    <span class="line">|</span>
+                                    <a href="#">DB2</a>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">NoSQL</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">Cassandra</a>
+                                        <span class="line">|</span>
+                                    <a href="#">Redis</a>
+                                    <span class="line">|</span>
+                                    <a href="#">MongoDB</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="first-level">认证考试</a>
+                            <ul class="sub-list">
+                                <li>
+                                    <span class="list-head"><a href="#">计算机等级考试</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">一级</a>
+                                        <span class="line">|</span>
+                                    <a href="#">二级C</a>
+                                    <span class="line">|</span>
+                                    <a href="#">二级Java</a>
+                                    <span class="line">|</span>
+                                    <a href="#">二级C++</a>
+                                    <span class="line">|</span>
+                                    <a href="#">网络工程师</a>
+                                    </span>
+                                    <span class="line">|</span>
+                                    <a href="#">数据库工程师</a>
+                                    <span class="line">|</span>
+                                    <a href="#">信息安全工程师</a>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">企业认证</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">思科认证</a>
+                                        <span class="line">|</span>
+                                    <a href="#">Oracle认证</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Linux认证</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Arm认证</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="first-level">企业IT</a>
+                            <ul class="sub-list">
+                                <li>
+                                    <span class="list-head"><a href="#">运维管理</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">Shell</a>
+                                        <span class="line">|</span>
+                                    <a href="#">自动化运维</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Ngnix</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Apache</a>
+                                    <span class="line">|</span>
+                                    <a href="#">运维监控</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">商业智能</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">FileMaker</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">操作系统</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">Linux</a>
+                                        <span class="line">|</span>
+                                    <a href="#">Windows</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Mac OS</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">企业服务</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">B2C</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="first-level">设计&产品&测试</a>
+                            <ul class="sub-list">
+                                <li>
+                                    <span class="list-head"><a href="#">设计基础</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">Photoshop</a>
+                                        <span class="line">|</span>
+                                    <a href="#">Flash</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Illustrator</a>
+                                    <span class="line">|</span>
+                                    <a href="#">Sketch</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">游戏设计</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">界面设计</a>
+                                        <span class="line">|</span>
+                                    <a href="#">角色设计</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">产品经理</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">需求分析</a>
+                                        <span class="line">|</span>
+                                    <a href="#">Axure</a>
+                                    <span class="line">|</span>
+                                    <a href="#">项目实战</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">视觉设计</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">应用UI设计</a>
+                                        <span class="line">|</span>
+                                    <a href="#">网页UI设计</a>
+                                    <span class="line">|</span>
+                                    <a href="#">设计理论</a>
+                                    <span class="line">|</span>
+                                    <a href="#">图形设计</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="list-head"><a href="#">测试工具</a></span>
+                                    <br>
+                                    <span>
+                                        <a href="#">自动化测试</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 课程焦点图轮播 -->
+                <div class="lesson-center-focus">
+                    <!-- 就业班推荐焦点轮播图 -->
+                    <div class="big-focus" id="big-focus">
+                        <div class="show clearfix">
+                            <img src="images/web.jpg" alt="web前端工程师">
+                            <img src="images/php.jpg" alt="PHP路径图更新">
+                            <img src="images/php2.jpg" alt="PHP工程师">
+                            <img src="images/andriod.jpg" alt="Android工程师">
+                            <img src="images/javaweb.jpg" alt="javaweb工程师">
+                            <img src="images/ios.jpg" alt="ios工程师">
+                        </div>
+                        <span class="left-btn" id="left-btn-big"></span>
+                        <span class="right-btn" id="right-btn-big"></span>
+                    </div>
+                    <div class="small-focus" id="small-focus">
+                        <div class="show">
+                            <ul class="clearfix">
+                                <li>
+                                    <a>
+                                        <p><img src="images/h5.png" alt="html5"></p>
+                                        <p>HTML5/Web前端工程师</p>
+                                        <p>前腾讯高级前端工程师授课</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <p><img src="images/andriod.png" alt="Andriod"></p>
+                                        <p>Andriod开发工程师</p>
+                                        <p>挑战月薪2万的工作机会</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <p><img src="images/ios.png" alt="ios"></p>
+                                        <p>iOS开发工程师</p>
+                                        <p>基于最新swift语言</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <p><img src="images/php3.png" alt="php"></p>
+                                        <p>PHP开发工程师</p>
+                                        <p>PHP是世界上最好的语言</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <p><img src="images/java-web.jpg" alt="javaweb"></p>
+                                        <p>JavaWeb开发工程师</p>
+                                        <p>Java人才4个月急速进阶</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <p><img src="images/employment.jpg" alt="极客学院就业班"></p>
+                                        <p>HTML5/Web前端工程师</p>
+                                        <p>0基础4个月成为IT工程师</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <span class="left-btn" id="left-btn-small"></span>
+                        <span class="right-btn" id="right-btn-small"></span>
+                    </div>
+                </div>
+                <!-- 课程显示区 -->
+                <div class="lesson-right-show">
+                    <div class="news-flash">
+                        <h3 class="flash-head">快讯</h3>
+                        <div class="flash-content">
+                            <a href="#" class="warn">[限时免费]每周限免系列课程</a>
+                            <a href="#" class="success">Cocos2d-x引擎源码</a>
+                            <a href="#" class="warn">系列课程：iOS支付功能</a>
+                            <a href="#" class="success">PHP职业路径图大量更新!</a>
+                        </div>
+                    </div>
+                    <div class="user-info clearfix">
+                        <div class="head-box left-area">
+                            <a href="#">
+                                <img src="images/head.png" alt="jds">
+                            </a>
+                        </div>
+                        <div class="user-wrap right-area">
+                            <div class="hello-world">
+                                <span>Hi!<a href="#" class="user-name">Dorsey</a></span>
+                            </div>
+                            <div class="operation">
+                                <a href="#">学习记录</a>
+                                <a href="#">我的回答</a>
+                                <a href="#">设置</a>
+                            </div>
+                            <div>
+                                <a href="#" class="vip-kind">免费VIP</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommend">
+                        <ul class="recommend-list clearfix" id="recommend-list">
+                            <li>
+                                <a href="#">
+                                    <span class="icon-box question-icon"></span>
+                                    <span>问答</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon-box wiki-icon"></span>
+                                    <span>wiki</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon-box course-icon"></span>
+                                    <span>课程</span>
+                                </a>
+                            </li>
+                            <li class="clear-border">
+                                <a href="#">
+                                    <span class="icon-box social-icon"></span>
+                                    <span>社群</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon-box download-icon"></span>
+                                    <span>下载</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon-box knowledge-icon"></span>
+                                    <span>知识</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon-box employment-icon"></span>
+                                    <span>职业</span>
+                                </a>
+                            </li>
+                            <li class="clear-border">
+                                <a href="#">
+                                    <span class="icon-box vip-icon"></span>
+                                    <span>VIP</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- pager结束 -->
+
+        <!-- 课程推荐区 -->
+        <div class="course-recommend-box">
+            <div class="box-width">
+                <!-- 课程推荐导航 -->
+                <ul class="course-nav clearfix" id="course-nav">
+                    <li>热门推荐<i class="arrow"></i></li>
+                    <li>最新课程<i class="arrow"></i></li>
+                    <li>免费课程<i class="arrow"></i></li>
+                    <li>项目实战<i class="arrow"></i></li>
+                    <li>全球首发<i class="arrow"></i></li>
+                    <li>企业合作<i class="arrow"></i></li>
+                </ul>
+                <div class="course-recommend" id="course-recommend">
+                    <!-- 热点推荐 -->
+                    <div class="hot-recommend">
+                        <ul class="clearfix">
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/hot-c.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">C语言编程实战：学生信息管理系统（下）</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/hot-website.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">整站项目开发实战之网站首页布局搭建</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/hot-Andriod.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">Andriod Studio全方位指南之进阶使用技巧</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li class="edge">
+                                <div class="img-box">
+                                    <img src="images/hot-mini.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">微信公众平台开发实战：微信绑定功能</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/hot-python.jpg" alt="python">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">Python GUI入门</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/hot-webservice.jpg" alt="webservice">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">webservice概述</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/hot-protect.jpg" alt="移动应用的破解与防护">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">移动应用的破解与防护</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li class="edge">
+                                <div class="img-box">
+                                    <img src="images/hot-weixin.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">微网站制作速成法</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                        <i></i>5课时&nbsp;39分钟
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- hot-recomend结束 -->
+                    <!-- 最新课程 -->
+                    <div class="latest-course">
+                        <ul class="clearfix">
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/arduino.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">C语言编程实战：学生信息管理系统（下）</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/flume.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">整站项目开发实战之网站首页布局搭建</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/line.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">Andriod Studio全方位指南之进阶使用技巧</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li class="edge">
+                                <div class="img-box">
+                                    <img src="images/cocos2d-x.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">微信公众平台开发实战：微信绑定功能</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/program.jpg" alt="python">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">Python GUI入门</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/launcher.jpg" alt="webservice">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">webservice概述</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/sdk.jpg" alt="移动应用的破解与防护">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">移动应用的破解与防护</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li class="edge">
+                                <div class="img-box">
+                                    <img src="images/wulianwang.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">微网站制作速成法</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                        <i></i>5课时&nbsp;39分钟
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- latest-course结束 -->
+                    <!-- 免费课程 -->
+                    <div class="free-course">
+                        <ul class="clearfix">
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/program.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">C语言编程实战：学生信息管理系统（下）</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/program.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">整站项目开发实战之网站首页布局搭建</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/hot-website.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">Andriod Studio全方位指南之进阶使用技巧</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li class="edge">
+                                <div class="img-box">
+                                    <img src="images/program.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">微信公众平台开发实战：微信绑定功能</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/hot-webservice.jpg" alt="python">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">Python GUI入门</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/program.jpg" alt="webservice">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">webservice概述</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/hot-python.jpg" alt="移动应用的破解与防护">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">移动应用的破解与防护</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li class="edge">
+                                <div class="img-box">
+                                    <img src="images/cocoaPods.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">微网站制作速成法</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                        <i></i>5课时&nbsp;39分钟
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- free-course结束 -->
+                    <!-- 项目实战 -->
+                    <div class="project-practice">
+                        <ul class="clearfix">
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/lock.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">C语言编程实战：学生信息管理系统（下）</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/calculator.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">整站项目开发实战之网站首页布局搭建</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/searh city.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">Andriod Studio全方位指南之进阶使用技巧</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li class="edge">
+                                <div class="img-box">
+                                    <img src="images/extendCal.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">微信公众平台开发实战：微信绑定功能</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/blog.jpg" alt="python">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">Python GUI入门</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/hit plane.jpg" alt="webservice">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">webservice概述</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/weibo.jpg" alt="移动应用的破解与防护">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">移动应用的破解与防护</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li class="edge">
+                                <div class="img-box">
+                                    <img src="images/kungfu.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">微网站制作速成法</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                        <i></i>5课时&nbsp;39分钟
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- project-practice结束 -->
+                    <!-- 世界首发 -->
+                    <div class="world-first">
+                        <ul class="clearfix">
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/developer.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">C语言编程实战：学生信息管理系统（下）</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/google.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">整站项目开发实战之网站首页布局搭建</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/watchKit1.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">Andriod Studio全方位指南之进阶使用技巧</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li class="edge">
+                                <div class="img-box">
+                                    <img src="images/watchKit2.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">微信公众平台开发实战：微信绑定功能</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/watchKit3.jpg" alt="python">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">Python GUI入门</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/watchKit4.jpg" alt="webservice">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">webservice概述</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/watchKit5.jpg" alt="移动应用的破解与防护">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">移动应用的破解与防护</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li class="edge">
+                                <div class="img-box">
+                                    <img src="images/watchKit6.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">微网站制作速成法</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                        <i></i>5课时&nbsp;39分钟
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- world-first结束 -->
+                    <!-- 企业合作 -->
+                    <div class="company-work">
+                        <ul class="clearfix">
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/program.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">C语言编程实战：学生信息管理系统（下）</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                    </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/program.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">整站项目开发实战之网站首页布局搭建</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/program.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">Andriod Studio全方位指南之进阶使用技巧</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li class="edge">
+                                <div class="img-box">
+                                    <img src="images/program.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">微信公众平台开发实战：微信绑定功能</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/hot-protect.jpg" alt="python">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">Python GUI入门</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/program.jpg" alt="webservice">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">webservice概述</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-box">
+                                    <img src="images/log.jpg" alt="移动应用的破解与防护">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">移动应用的破解与防护</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                    <i></i>5课时&nbsp;39分钟
+                                </span>
+                                </div>
+                            </li>
+                            <li class="edge">
+                                <div class="img-box">
+                                    <img src="images/program.jpg" alt="c语言">
+                                    <i class="play"></i>
+                                    <i class="favorite"></i>
+                                </div>
+                                <div class="text-box">
+                                    <span><a href="#">微网站制作速成法</a></span>
+                                    <br>
+                                    <div class="course-message">
+                                        <span>其主要任务是用计算机对学生的各种信息进行日常管理，如查询、增加、显示、删除，还可以实时了解学生成绩的动态，更准确地指引学生的学习方向。</span>
+                                    </div>
+                                    <span class="course-time">
+                                        <i></i>5课时&nbsp;39分钟
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- company-work结束 -->
+                </div>
+            </div>
+        </div>
+        <!-- course-recommend-box结束 -->
+
+        <!-- 职业路径图 -->
+        <div class="profession-route">
+            <div class="box-width">
+                <div class="profession-head">
+                    <h2>职业路径图</h2>
+                </div>
+                <div class="profession-content" id="profession-content">
+                    <ul class="profession-list clearfix">
+                        <li>
+                            <div class="img-box">
+                                <img src="images/h5-engineer.png" alt="html5">
+                            </div>
+                            <div class="text-box">
+                                <h3>WEB大前端工程师</h3>
+                                <p>月薪15k-30k</p>
+                                <p>Web开发的未来趋势</p>
+                            </div>
+                            <div class="btn-box">
+                                <span>立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-box">
+                                <img src="images/Andriod-engineer.png" alt="html5">
+                            </div>
+                            <div class="text-box">
+                                <h3>Andriod工程师</h3>
+                                <p>月薪5k-30k</p>
+                                <p>最火爆的职业，人才缺口大</p>
+                            </div>
+                            <div class="btn-box">
+                                <span>立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-box">
+                                <img src="images/iOS-engineer.png" alt="html5">
+                            </div>
+                            <div class="text-box">
+                                <h3>iOS开发工程师</h3>
+                                <p>月薪6k-30k</p>
+                                <p>企业必争的人才资源</p>
+                            </div>
+                            <div class="btn-box">
+                                <span>立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-box">
+                                <img src="images/java-engineer.png" alt="html5">
+                            </div>
+                            <div class="text-box">
+                                <h3>JavaWeb工程师</h3>
+                                <p>月薪6k-35k</p>
+                                <p>就业面最广的职业方向</p>
+                            </div>
+                            <div class="btn-box">
+                                <span>立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-box">
+                                <img src="images/php-engineer.png" alt="html5">
+                            </div>
+                            <div class="text-box">
+                                <h3>PHP工程师</h3>
+                                <p>月薪5k-35k</p>
+                                <p>最好的开发语言，没有之一</p>
+                            </div>
+                            <div class="btn-box">
+                                <span>立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-box">
+                                <img src="images/cocos2d-engineer.png" alt="html5">
+                            </div>
+                            <div class="text-box">
+                                <h3>Cocos2d工程师</h3>
+                                <p>月薪7k-30k</p>
+                                <p>最流行跨平台手机游戏开发</p>
+                            </div>
+                            <div class="btn-box">
+                                <span>立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-box">
+                                <img src="images/unity3d-engineer.png" alt="html5">
+                            </div>
+                            <div class="text-box">
+                                <h3>Unity3D工程师</h3>
+                                <p>月薪7k-40k</p>
+                                <p>国际最热门的3D游戏引擎</p>
+                            </div>
+                            <div class="btn-box">
+                                <span>立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-box">
+                                <img src="images/asp.net-engineer.png" alt="html5">
+                            </div>
+                            <div class="text-box">
+                                <h3>ASP.NET工程师</h3>
+                                <p>月薪5k-30k</p>
+                                <p>微软强力推行的开发语言</p>
+                            </div>
+                            <div class="btn-box">
+                                <span>立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-box">
+                                <img src="images/bigdata-engineer.png" alt="html5">
+                            </div>
+                            <div class="text-box">
+                                <h3>大数据工程师</h3>
+                                <p>月薪8k-40k</p>
+                                <p>目前最稀缺的职业方向</p>
+                            </div>
+                            <div class="btn-box">
+                                <span>立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-box">
+                                <img src="images/yunwei-engineer.png" alt="html5">
+                            </div>
+                            <div class="text-box">
+                                <h3>运维工程师</h3>
+                                <p>月薪6k-30k</p>
+                                <p>最能折腾的职业岗位</p>
+                            </div>
+                            <div class="btn-box">
+                                <span>立即学习</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- profession-route结束 -->
+
+        <!-- 知识体系图 -->
+        <div class="knowledge-system">
+            <div class="box-width">
+                <div class="knowledge-head">
+                    <h2>知识体系图</h2>
+                </div>
+                <div class="knowledge-content" id="knowledge-content">
+                    <ul class="knowledge-list clearfix">
+                        <li>
+                            <div class="front">
+                                <div class="img-box">
+                                    <img src="images/andriod.png" alt="andriod">
+                                </div>
+                                <div class="text-box">
+                                    <h3>Andriord</h3>
+                                    <p>90门课程</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p>985922人已学习</p>
+                                <span class="study-btn">立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="front">
+                                <div class="img-box">
+                                    <img src="images/h5.png" alt="h5">
+                                </div>
+                                <div class="text-box">
+                                    <h3>HTML5开发</h3>
+                                    <p>116门课程</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p>985922人已学习</p>
+                                <span class="study-btn">立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="front">
+                                <div class="img-box">
+                                    <img src="images/Java.png" alt="andriod">
+                                </div>
+                                <div class="text-box">
+                                    <h3>java语言</h3>
+                                    <p>45门课程</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p>985922人已学习</p>
+                                <span class="study-btn">立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="front">
+                                <div class="img-box">
+                                    <img src="images/php3.png" alt="andriod">
+                                </div>
+                                <div class="text-box">
+                                    <h3>PHP语言</h3>
+                                    <p>23门课程</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p>985922人已学习</p>
+                                <span class="study-btn">立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="front">
+                                <div class="img-box">
+                                    <img src="images/javaweb2.jpg" alt="andriod">
+                                </div>
+                                <div class="text-box">
+                                    <h3>JavaWeb</h3>
+                                    <p>64门课程</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p>985922人已学习</p>
+                                <span class="study-btn">立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="front">
+                                <div class="img-box">
+                                    <img src="images/ios.png" alt="andriod">
+                                </div>
+                                <div class="text-box">
+                                    <h3>iOS</h3>
+                                    <p>51门课程</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p>985922人已学习</p>
+                                <span class="study-btn">立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="front">
+                                <div class="img-box">
+                                    <img src="images/net.png" alt="andriod">
+                                </div>
+                                <div class="text-box">
+                                    <h3>Asp.Net</h3>
+                                    <p>61门课程</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p>985922人已学习</p>
+                                <span class="study-btn">立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="front">
+                                <div class="img-box">
+                                    <img src="images/c.png" alt="andriod">
+                                </div>
+                                <div class="text-box">
+                                    <h3>C语言</h3>
+                                    <p>17门课程</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p>985922人已学习</p>
+                                <span class="study-btn">立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="front">
+                                <div class="img-box">
+                                    <img src="images/phyon.png" alt="andriod">
+                                </div>
+                                <div class="text-box">
+                                    <h3>Phython</h3>
+                                    <p>38门课程</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p>985922人已学习</p>
+                                <span class="study-btn">立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="front">
+                                <div class="img-box">
+                                    <img src="images/unity3d.png" alt="andriod">
+                                </div>
+                                <div class="text-box">
+                                    <h3>Unity3D</h3>
+                                    <p>45门课程</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p>985922人已学习</p>
+                                <span class="study-btn">立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="front">
+                                <div class="img-box">
+                                    <img src="images/swift.png" alt="andriod">
+                                </div>
+                                <div class="text-box">
+                                    <h3>Swift语言</h3>
+                                    <p>11门课程</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p>985922人已学习</p>
+                                <span class="study-btn">立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="front">
+                                <div class="img-box">
+                                    <img src="images/c sharp.png" alt="andriod">
+                                </div>
+                                <div class="text-box">
+                                    <h3>C#</h3>
+                                    <p>30门课程</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p>985922人已学习</p>
+                                <span class="study-btn">立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="front">
+                                <div class="img-box">
+                                    <img src="images/bootstrap.png" alt="andriod">
+                                </div>
+                                <div class="text-box">
+                                    <h3>Bootstrap</h3>
+                                    <p>11门课程</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p>985922人已学习</p>
+                                <span class="study-btn">立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="front">
+                                <div class="img-box">
+                                    <img src="images/Cocos2d-x.png" alt="andriod">
+                                </div>
+                                <div class="text-box">
+                                    <h3>Cocos2d-x游戏开发</h3>
+                                    <p>89门课程</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p>985922人已学习</p>
+                                <span class="study-btn">立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="front">
+                                <div class="img-box">
+                                    <img src="images/computer1.jpg" alt="andriod">
+                                </div>
+                                <div class="text-box">
+                                    <h3>计算机一级</h3>
+                                    <p>7门课程</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p>985922人已学习</p>
+                                <span class="study-btn">立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="front">
+                                <div class="img-box">
+                                    <img src="images/computer2.jpg" alt="andriod">
+                                </div>
+                                <div class="text-box">
+                                    <h3>计算机二级</h3>
+                                    <p>25门课程</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p>985922人已学习</p>
+                                <span class="study-btn">立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="front">
+                                <div class="img-box">
+                                    <img src="images/gui.png" alt="andriod">
+                                </div>
+                                <div class="text-box">
+                                    <h3>GUI</h3>
+                                    <p>40门课程</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p>985922人已学习</p>
+                                <span class="study-btn">立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="front">
+                                <div class="img-box">
+                                    <img src="images/watchkit.png" alt="andriod">
+                                </div>
+                                <div class="text-box">
+                                    <h3>WatchKit开发</h3>
+                                    <p>5门课程</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p>985922人已学习</p>
+                                <span class="study-btn">立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="front">
+                                <div class="img-box">
+                                    <img src="images/docker.png" alt="andriod">
+                                </div>
+                                <div class="text-box">
+                                    <h3>Docker</h3>
+                                    <p>9门课程</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p>985922人已学习</p>
+                                <span class="study-btn">立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="front">
+                                <div class="img-box">
+                                    <img src="images/egret.png" alt="andriod">
+                                </div>
+                                <div class="text-box">
+                                    <h3>Egret</h3>
+                                    <p>7门课程</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p>985922人已学习</p>
+                                <span class="study-btn">立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="front">
+                                <div class="img-box">
+                                    <img src="images/ardunio.png" alt="andriod">
+                                </div>
+                                <div class="text-box">
+                                    <h3>Arduino</h3>
+                                    <p>14门课程</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p>985922人已学习</p>
+                                <span class="study-btn">立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="front">
+                                <div class="img-box">
+                                    <img src="images/Andriod UI.png" alt="andriod">
+                                </div>
+                                <div class="text-box">
+                                    <h3>UiAutomator</h3>
+                                    <p>20门课程</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p>985922人已学习</p>
+                                <span class="study-btn">立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="front">
+                                <div class="img-box">
+                                    <img src="images/js.png" alt="andriod">
+                                </div>
+                                <div class="text-box">
+                                    <h3>JavaScript</h3>
+                                    <p>43门课程</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p>985922人已学习</p>
+                                <span class="study-btn">立即学习</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="front">
+                                <div class="img-box">
+                                    <img src="images/nodjs.png" alt="andriod">
+                                </div>
+                                <div class="text-box">
+                                    <h3>Node.js</h3>
+                                    <p>39门课程</p>
+                                </div>
+                            </div>
+                            <div class="back">
+                                <p>985922人已学习</p>
+                                <span class="study-btn">立即学习</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- knowledge-system结束 -->
+        
+        <!-- 精品课程 -->
+        <div class="boutique-course">
+            <div class="box-width">
+                <div class="boutique-head">
+                    <h2>精品系列课程</h2>
+                </div>
+                <div class="boutique-content clearfix" id="boutique-content">
+                    <div class="item-box">
+                        <h4>Cocos2d-x引擎源码</h4>
+                        <div class="img-box">
+                            <img src="images/boutique1.jpg" alt="Cocos2d-x引擎源码">
+                        </div>
+                        <div class="info clearfix">
+                            <span>8门&nbsp;21120人学习</span>
+                            <span class="collection">收藏</span>
+                        </div>
+                        <div class="course-info">
+                            <div class="head">
+                                <a href="#"><img src="images/teacher1.jpeg" alt="图形学人"></a>
+                            </div>
+                            <div class="name">
+                                <a href="#">图形学人</a>
+                            </div>
+                            <div class="text">
+                                <a href="#">Cocos2d-x游戏引擎的一大特点是开源，游戏开发者可以通过阅读引擎源代码，更深入的了解游戏的底层实现；也可以通过阅读引擎源代码，了解Cocos2d-x的优势，从而更好的发挥其优势；同时，还可以针对自己的游戏，对引擎源代码进行一定的修改，从而更好的优化游戏。</a>
+                            </div>
+                            <div>
+                                <span class="study-btn">马上学习</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-box">
+                        <h4>Java设计模式</h4>
+                        <div class="img-box">
+                            <img src="images/boutique2.jpg" alt="Cocos2d-x引擎源码">
+                        </div>
+                        <div class="info clearfix">
+                            <span>24门&nbsp;81418人学习</span>
+                            <span class="collection">收藏</span>
+                        </div>
+                        <div class="course-info">
+                            <div class="head">
+                                <a href="#"><img src="images/teacher2.jpg" alt="图形学人"></a>
+                            </div>
+                            <div class="name">
+                                <a href="#">hexter</a>
+                            </div>
+                            <div class="text">
+                                <a href="#">按照一个模式一个课程的方式讲解23种设计模式。
+                                </a>
+                            </div>
+                            <div>
+                                <span class="study-btn">马上学习</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-box">
+                        <h4>Axure从入门到精通系列</h4>
+                        <div class="img-box">
+                            <img src="images/boutique3.jpg" alt="Cocos2d-x引擎源码">
+                        </div>
+                        <div class="info clearfix">
+                            <span>19门&nbsp;81842人学习</span>
+                            <span class="collection">收藏</span>
+                        </div>
+                        <div class="course-info">
+                            <div class="head">
+                                <a href="#"><img src="images/teacher3.jpeg" alt="图形学人"></a>
+                            </div>
+                            <div class="name">
+                                <a href="#">j_kevin</a>
+                            </div>
+                            <div class="text">
+                                <a href="#">按照一个模式一个课程的方式讲解23种设计模式。
+                                </a>
+                            </div>
+                            <div>
+                                <span class="study-btn">马上学习</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-box">
+                        <h4>Phython初级教程</h4>
+                        <div class="img-box">
+                            <img src="images/boutique4.jpg" alt="Cocos2d-x引擎源码">
+                        </div>
+                        <div class="info clearfix">
+                            <span>16门&nbsp;153751人学习</span>
+                            <span class="collection">收藏</span>
+                        </div>
+                        <div class="course-info">
+                            <div class="head">
+                                <a href="#"><img src="images/teacher4.jpeg" alt="图形学人"></a>
+                            </div>
+                            <div class="name">
+                                <a href="#">韦苏恩</a>
+                            </div>
+                            <div class="text">
+                                <a href="#">本套课程主要会让新手接触 Python，让各位同学从零基础开始掌握 Python语言。掌握Python基础知识，Python语法，Python运算符与表达式，三种控制流、Python函数、Python数据结构和算法等知识。</a>
+                            </div>
+                            <div>
+                                <span class="study-btn">马上学习</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- boutique-course结束 -->
+        <!-- Wiki区 -->
+        <div class="wiki-area">
+            <div class="box-width">
+                <div class="wiki-head">
+                    <h2>Wiki</h2>
+                </div>
+                <div class="wiki-content clearfix">
+                    <div class="recommend-wiki wiki-item">
+                        <div class="head">
+                            <h3>推荐</h3>
+                        </div>
+                        <div class="book-box clearfix">
+                            <div class="first-book">
+                                <div class="img-box">
+                                    <a href="#"><img src="images/book-linux.jpg" alt="linux"></a>
+                                </div>
+                                <a href="#">程序员眼中的Linux</a>
+                                <a href="#" class="page">120页/30章</a>
+                                <i class="look"></i>
+                            </div>
+                            <div class="second-book">
+                                <div class="img-box">
+                                    <a href="#"><img src="images/book-django.jpg" alt="linux"></a>
+                                </div>
+                                <a href="#">Django搭建博客</a>
+                                <a href="#" class="page">70页/13章</a>
+                                <i class="look"></i>
+                            </div>
+                        </div>
+                        <div class="specific-introduce">
+                            <a href="#" classs="clearfix">
+                                <span>Lua教程</span>
+                                <span class="page">96页/25章</span>
+                            </a>
+                            <a href="#" classs="clearfix">
+                                <span>iOS人机交互指南</span>
+                                <span class="page">294页/48章</span>
+                            </a>
+                            <a href="#" classs="clearfix">
+                                <span>Struts2教程</span>
+                                <span class="page">154页/31章</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="latest-wiki wiki-item">
+                        <div class="head">
+                            <h3>最新</h3>
+                        </div>
+                        <div class="book-box clearfix">
+                            <div class="first-book">
+                                <div class="img-box">
+                                    <a href="#"><img src="images/book-RxJava.jpg" alt="linux"></a>
+                                </div>
+                                <a href="#">RxJava中文版</a>
+                                <a href="#" class="page">2016/01/27</a>
+                                <i class="look"></i>
+                            </div>
+                            <div class="second-book">
+                                <div class="img-box">
+                                    <a href="#"><img src="images/book-TensorFlow.jpg" alt="linux"></a>
+                                </div>
+                                <a href="#">TensorFlow中文版</a>
+                                <a href="#" class="page">2015/12/14</a>
+                                <i class="look"></i>
+                            </div>
+                        </div>
+                        <div class="specific-introduce">
+                            <a href="#" classs="clearfix">
+                                <span>Lua教程</span>
+                                <span class="page">96页/25章</span>
+                            </a>
+                            <a href="#" classs="clearfix">
+                                <span>Andriod官方培训课程</span>
+                                <span class="page">2015/12/08</span>
+                            </a>
+                            <a href="#" classs="clearfix">
+                                <span>Laravel5.1中文版</span>
+                                <span class="page">2015/11/11</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hot-wiki wiki-item">
+                        <div class="head">
+                            <h3>热门</h3>
+                        </div>
+                        <div class="book-box clearfix">
+                            <div class="first-book">
+                                <div class="img-box">
+                                    <a href="#"><img src="images/book-Material.jpg" alt="linux"></a>
+                                </div>
+                                <a href="#">Material Design</a>
+                                <a href="#" class="page">738490人学习</a>
+                                <i class="look"></i>
+                            </div>
+                            <div class="second-book">
+                                <div class="img-box">
+                                    <a href="#"><img src="images/book-swift.jpg" alt="linux"></a>
+                                </div>
+                                <a href="#">Swift2.0教程</a>
+                                <a href="#" class="page">516198人学习</a>
+                                <i class="look"></i>
+                            </div>
+                        </div>
+                        <div class="specific-introduce">
+                            <a href="#" classs="clearfix">
+                                <span>React Native中文版</span>
+                                <span class="page">434961人学习</span>
+                            </a>
+                            <a href="#" classs="clearfix">
+                                <span>React中文版</span>
+                                <span class="page">74733人学习</span>
+                            </a>
+                            <a href="#" classs="clearfix">
+                                <span>Spring教程</span>
+                                <span class="page">57859人学习</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- wiki-area结束 -->
+        <!-- 战略合作企业 -->
+        <div class="cooperation-company">
+            <div class="box-width">
+                <div class="company-head">
+                    <h2>战略合作企业</h2>
+                </div>
+                <div class="company-list" id="company-list">
+                    <div class="show">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="#"><img src="images/microsoft.jpg" alt="microsoft"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/tengxun.jpg" alt="microsoft"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/chukong.jpg" alt="microsoft"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/qual.jpg" alt="microsoft"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/amd.jpg" alt="microsoft"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/keda.jpg" alt="microsoft"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/tuling.jpg" alt="microsoft"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/tingyun.jpg" alt="microsoft"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/juhe.jpg" alt="microsoft"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/boots.jpg" alt="microsoft"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/apache.jpg" alt="microsoft"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/oneApm.jpg" alt="microsoft"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="left-btn"></span>
+                    <span class="right-btn"></span>
+                </div>
+            </div>
+        </div>
+        <!-- cooperation-company结束 -->
+
+        <!-- 媒体报道 -->
+        <div class="media">
+            <div class="box-width">
+                <div class="media-head">
+                    <h2>媒体报道</h2>
+                </div>
+                <div class="media-list" id="media-list">
+                    <div class="show">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="#"><img src="images/sina.jpg" alt="microsoft"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/21cn.jpg" alt="microsoft"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/36kr.jpg" alt="microsoft"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/jiemo.jpg" alt="microsoft"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/sohu.jpg" alt="microsoft"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/tecent.jpg" alt="microsoft"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/huanqiu.jpg" alt="microsoft"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/wangyi.jpg" alt="microsoft"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/duozhi.jpg" alt="microsoft"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/zhonghua.jpg" alt="microsoft"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/feixiang.jpg" alt="microsoft"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="images/touzi.jpg" alt="microsoft"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="left-btn"></span>
+                    <span class="right-btn"></span>
+                </div>
+            </div>
+        </div>
+        <!-- media结束 -->
+
+        <!-- 极客学院信息区 -->
+        <div class="jike-info">
+            <div class="box-width clearfix">
+                <div class="info-content">
+                    <ul class="info-list clearfix">
+                        <li>
+                            <a href="#">极客学院</a>
+                            <ul class="second-list">
+                                <li><a href="#">·&nbsp;职业课程库</a></li>
+                                <li><a href="#">·&nbsp;知识体系图</a></li>
+                                <li><a href="#">·&nbsp;职业路径图</a></li>
+                                <li><a href="#">·&nbsp;企业课程</a></li>
+                                <li><a href="#">·&nbsp;资源下载</a></li>
+                                <li><a href="#">·&nbsp;课程标签</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">网站服务</a>
+                            <ul class="second-list">
+                                <li><a href="#">·&nbsp;课程需求</a></li>
+                                <li><a href="#">·&nbsp;免费体验VIP</a></li>
+                                <li><a href="#">·&nbsp;黑板报</a></li>
+                                <li><a href="#">·&nbsp;网站地图</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">帮助中心</a>
+                            <ul class="second-list">
+                                <li><a href="#">·&nbsp;技术问答</a></li>
+                                <li><a href="#">·&nbsp;VIP权益</a></li>
+                                <li><a href="#">·&nbsp;常见问题</a></li>
+                                <li><a href="#">·&nbsp;服务条款</a></li>
+                                <li><a href="#">·&nbsp;版权声明</a></li>
+                                <li><a href="#">·&nbsp;免责声明</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">交流合作</a>
+                            <ul class="second-list">
+                                <li><a href="#">·&nbsp;关于我们</a></li>
+                                <li><a href="#">·&nbsp;联系我们</a></li>
+                                <li><a href="#">·&nbsp;社会招聘</a></li>
+                                <li><a href="#">·&nbsp;布道师招聘</a></li>
+                                <li><a href="#">·&nbsp;合作咨询</a></li>
+                                <li><a href="#">·&nbsp;友情链接</a></li>
+                                <li><a href="#">·&nbsp;实战教练招募</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="jike-contact">
+                    <div class="motto">
+                        <p>极客学院，编程是一种信仰！</p>
+                    </div>
+                    <div class="mobile-client">
+                        <a href="#" class="clearfix">
+                            <div class="img-box">
+                                <img src="images/mobile client.png" alt="手机端">
+                            </div>
+                            <div class="text-box">
+                                <h2>手机客户端</h2>
+                                <p>离线缓存&nbsp;随时学习</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="contact-method">
+                        <a class="microblog"></a>
+                        <a class="post-bar"></a>
+                        <a class="WeChat"></a>
+                    </div>
+                    <div class="contact-us">
+                        <a href="#" class="clearfix">
+                            <div class="img-box">
+                                <span class="customer-service"></span>
+                            </div>
+                            <div class="text-box">
+                                <h2>联系我们</h2>
+                                <p>工作日9:00-21:00在线</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- jike-info结束 -->
+
+        <!-- 底部版权区 -->
+        <div class="copyright">
+            <div class="box-width">
+                <span>Copyright © 2013-2016</span>
+                <a href="#">北京优亿致远无线技术有限公司</a>
+                <a href="#">.jikexueyuan.com</a>
+                <span> All Rights Reversed. 京ICP备11018032号-8 京公网安备11010802020210</span>
+            </div>
+        </div>
+        <!-- copyright结束 -->
+        
+        <!-- 回到顶部 -->
+        <div class="fixed-box">
+            <div class="go-top">
+                <span></span>
+            </div>
+            <div class="app">
+                <img src="images/mobile client.png" alt="app">
+                <span class="jike-app"></span>
+            </div>
+            <div class="weixin">
+                <img src="images/weixin2.jpg" alt="weixin">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/sea.js"></script>
+    <script type="text/javascript">
+    // Set configuration
+    seajs.config({
+        base: "./js/",
+        alias: {
+            "jquery": "jquery.js"
+        }
+    });
+
+    seajs.use("./js/main2");
+    </script>
+</body>
+
+</html>

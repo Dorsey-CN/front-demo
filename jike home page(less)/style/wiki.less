@@ -1,0 +1,82 @@
+/*WIKI区*/
+
+.wiki-area {
+    margin-top: 40px;
+	.wiki-head h2{
+    	.h2;
+    }
+	.wiki-item {
+		color: @color-gray;
+		padding: 20px 15px;
+		.border;
+		width: 301px;
+		float: left;
+		&:hover {
+			border-color: @main-color;
+		}
+		a {
+			display: block;
+			line-height: 20px;
+		}
+		.head h3 {
+			font-weight: normal;
+			font-family: @family;
+		}
+	}
+	.book-box {
+		margin: 10px 0;
+		img {
+			.wid-len(140px,200px);
+		}
+		.page {
+			color: #999;
+		}
+		.img-box {
+			background-color: #999;
+			border-radius: 5px;
+			overflow: hidden;
+			height: 200px;
+			img{
+				transform-origin: 0 0 0;
+				transition: 1s;
+			}
+		}
+		.first-book,
+		.second-book {
+			float: left;
+			position: relative;
+			&:hover{
+				display: inline-block;
+			}
+			&:hover a{
+				color: @main-color;
+			}
+		}
+		.first-book {
+			margin-right: 15px;
+		}
+		.look {
+			display: inline-block;
+			.wid-len(50px,25px);
+			background: url(../images/look.png) left top no-repeat;
+			background-size: 80%;
+			position: absolute;
+			right: -18px;
+			top: -16px;
+			display: none;
+		}
+	}
+	.specific-introduce{
+		a{
+			span{
+				color: #999;
+			}
+			&:hover span{
+				color: @main-color;
+			}
+		}
+		.page {
+		    float: right;
+		}
+	}
+}

@@ -1,0 +1,163 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	    <title><%= title %></title>
+	    <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
+	    <link rel="stylesheet" type="text/css" href="stylesheets/back.css">
+	</head>
+	<body>
+	<!-- 顶部导航区 -->
+	<div class="topBar">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand">新闻管理系统</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="admin">
+                            <a href="#"><img src="public/images/admin.png" alt="admin"></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">admin <span class="caret"></span></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </div>
+	<!-- 内容区 -->
+	<div class="content">
+        <div class="container">
+            <div class="row addHeight">
+                <!-- 左侧导航区 -->
+                <div class="left-nav col-xs-0 col-sm-3 col-md-2">
+                <ul class="nav nav-pills nav-stacked nav-list">
+                    <li role="presentation">
+                        <a href="#" id="recommend">推荐</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#" id="baijia">百家</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#" id="society">社会</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#" id="entertainment">娱乐</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#" id="picture">图片</a>
+                    </li>
+                </ul>
+            </div>
+                <!-- 右侧内容区 -->
+                <div class="right-con clearfix col-xs-12 col-sm-9 col-md-10">
+    <div class="page-header clearfix">
+        <h4>新闻管理</h4>
+    </div>
+    <div class="add-news">
+        <h5><a href="javascript:void(0);" datas="myModal" id="add">添加新闻</a></h5></div>
+    <!-- 详细信息区 -->
+    <div class="news-list clearfix table-responsive">
+        <table class="table  table-striped table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>新闻类别</th>
+                    <th>新闻标题</th>
+                    <th>图片地址</th>
+                    <th>更新时间</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody id="tb" class="tb">
+            <!-- 动态生成新闻列表中的内容 -->
+            	<%
+                    for(var i=0;i<newsCon.length;i++){
+                        var year = new Date(newsCon[i].addtime).getFullYear();
+                        var month = new Date(newsCon[i].addtime).getMonth()+1;
+                        var day = new Date(newsCon[i].addtime).getDate(); 
+                         if(month<10){
+                            month = '0'+month;
+                         }
+                         if(day<10){
+                            day = '0'+day;
+                         }
+                    %>
+	             	<tr>
+	             		<td><a href="#"><%=i+1%></a></td>
+	             		<td><a href="#"><%=newsCon[i].type%></a></td>
+	             		<td><a href="#" title="<%=newsCon[i].title%>"><%=newsCon[i].title%></a></td>
+	             		<td><a href="#" title="<%=newsCon[i].imgsrc%>"><%=newsCon[i].imgsrc%></a></td>
+                        <td><a href="#"><%=year+ '-'+month+'-'+day%></a>
+                        </td>
+                        <td>
+	             			<a href="javascript:void(0);" class="update">修改/</a>
+	             			<a href="#" class="delete">删除</a>
+	             		</td>
+	             	</tr>
+             	<%}%>
+            </tbody>
+        </table>
+        <div id="myModal" class="reveal-modal">
+            <h2>添加新闻信息 </h2>
+            <p>新闻类型：
+                <select name="newstype" id="news-type">
+                    <option>推荐</option>
+                    <option>百家</option>
+                    <option>社会</option>
+                    <option>图片</option>
+                    <option>娱乐</option>
+                </select>
+            </p>
+            <p>新闻标题：
+                <input name="news-title" type="text" class="input" id="news-title">
+            </p>
+            <p>图片地址：
+                <input name="img-address" type="text" class="input" id="img-address">
+            </p>
+            <p>添加时间：
+                <input name="add-time" type="date" class="input" id="add-time">
+            </p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <!-- <input name="sub" id="sub" type="button" value="提  交" /> -->
+                <input class="btn btn-default btn-lg btn-block" id="sub" type="button" value="提交">
+            </p>
+            <a class="close-reveal-modal">×</a>
+        </div>
+    </div>
+    <div class="container pag">
+        <div class="row">
+            <nav>
+                <ul class="pagination col-xs-12 col-md-4">
+                    <li><a href="#">首页 <span class="sr-only"></span></a></li>
+                    <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                    <li class="active"><a href="#">1 <span class="sr-only"></span></a></li>
+                    <li><a href="#">2 <span class="sr-only"></span></a></li>
+                    <li><a href="#">3 <span class="sr-only"></span></a></li>
+                    <li><a href="#">... <span class="sr-only"></span></a></li>
+                    <li><a href="#" aria-label="Previous"><span aria-hidden="true">&raquo;</span></a></li>
+                    <li><a href="#">尾页 <span class="sr-only"></span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+	<script type="text/javascript" src="javascripts/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.reveal.js"></script>
+    <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="javascripts/back.js"></script>
+	</body>
+</html>

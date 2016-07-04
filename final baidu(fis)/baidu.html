@@ -1,0 +1,433 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>百度一下，你就知道</title>
+    <link type="text/css" rel="stylesheet" href="style/main_1957feb.css">
+</head>
+<!--[if IE]>
+    <script type="text/javascript" src="/js/compatible_9afd2e1.js"></script>
+<![endif]-->
+
+<body>
+    <div class="container">
+        <!--  上部导航区 -->
+        <div class="topBar clearfix" id="topBar">
+            <!-- 导航区左侧 -->
+            <div class="leftArea clearfix">
+                <!-- 天气区 -->
+                <div class="weather" id="weather">
+                    <a href="#"><span class="show-city" id="show-city"></span></a>
+                    <a href="#">
+                        <span class="show-weather" id="show-weather"></span>
+                    </a>
+                    <a href="#">
+                        <span class="show-tem">
+                        <em id="low_tem"></em>&nbsp;
+                        <em id="high_tem"></em>
+                        <em class="line">|</em>
+                    </span>
+                    </a>
+                </div>
+                <!-- 宝箱 -->
+                <div class="treasure_box">
+                    <span><a href="http://vip.baidu.com/act/xuyuan" id="treasure">宝箱</a></span>
+                </div>
+                <!-- 换肤 -->
+                <div class="change_skin">
+                    <span><a href="" id="chane_skin">换肤</a></span>
+                    <div class="skinBox" id="skinBox">
+                        <div class="skinHead">
+                            <div class="tools">
+                                <span class="cancle" id="cancle"><i></i>不使用皮肤</span>
+                                <span class="pack_up" id="pack_up"><i></i>收起</span>
+                            </div>
+                        </div>
+                        <div class="operateSkin clearfix">
+                            <div class="checkSkin" id="checkSkin">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="2" rowspan="2" class="big"><img src="images/bg01_1c1d90d.jpg" alt="01"></td>
+                                            <td><img src="images/bg02_8a296bd.jpg" alt="01"></td>
+                                            <td><img src="images/bg03_03c1d46.jpg" alt="01"></td>
+                                            <td><img src="images/bg04_c05a24e.jpg" alt="01"></td>
+                                            <td><img src="images/bg05_0a8c080.jpg" alt="01"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="images/bg06_86c0007.jpg" alt="01"></td>
+                                            <td colspan="2" rowspan="2" class="big"><img src="images/bg07_4173e61.jpg" alt="01"></td>
+                                            <td><img src="images/bg08_c9da3f1.jpg" alt="01"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="images/bg09_3870125.jpg" alt="01"></td>
+                                            <td><img src="images/bg10_2a176ee.jpg" alt="01"></td>
+                                            <td><img src="images/bg11_99027f4.jpg" alt="01"></td>
+                                            <td><img src="images/bg12_88b4f70.jpg" alt="01"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="previewSkin" id="previewSkin">
+                            </div>
+                            <p>背景皮肤效果预览</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 消息盒子 -->
+                <div class="messageBox">
+                    <span><a href="http://www.sina.com" id="message">消息</a></span>
+                    <div class="showMessage" id="showMessage">
+                        <div class="messageCon">
+                            <p>您目前没有消息</p>
+                        </div>
+                        <div class="operateMessage">
+                            <input type="button" value="清空消息" class="clearBtn">
+                            <input type="button" value="消息设置" class="setBtn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 导航区左侧结束 -->
+            <!-- 导航区右侧 -->
+            <div class="rightArea" id="rightArea">
+                <ul class="right_tab clearfix">
+                    <li><a href="http://www.nuomi.com/?cid=002540">糯米</a></li>
+                    <li><a href="http://news.baidu.com/">新闻</a></li>
+                    <li><a href="http://www.hao123.com/">好123</a></li>
+                    <li><a href="http://map.baidu.com/">地图</a></li>
+                    <li><a href="http://v.baidu.com/">视频</a></li>
+                    <li><a href="http://tieba.baidu.com/">贴吧</a></li>
+                    <li class="user" id="user"><a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F" class="clearBod">Dorsey</a>
+                        <ul class="user-list" id="user-list">
+                            <li><a href="#">我的VIP</a></li>
+                            <li><a href="#">个人中心</a></li>
+                            <li><a href="#">账号设置</a></li>
+                            <li><a href="#">意见反馈</a></li>
+                            <li><a href="#">退出</a></li>
+                        </ul>
+                    </li>
+                    <li class="setting" id="setting"><a href="javascript:;" class="clearBod">设置</a>
+                        <ul class="setting-list" id="setting-list">
+                            <li><a href="#">搜索设置</a></li>
+                            <li><a href="#">高级搜索</a></li>
+                            <li><a href="#">关闭预测</a></li>
+                            <li><a href="#">搜索历史</a></li>
+                        </ul>
+                    </li>
+                    <li class="more_li" id="more_li">
+                        <a href="javascript:;" class="more" id="more">更多产品</a>
+                        <ul class="more_list" id="more_list">
+                            <li>
+                                <a href="http://music.baidu.com/">
+                                    <img src="images/music_48d9465.png" />
+                                    <br>音乐
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://image.baidu.com/">
+                                    <img src="images/image_156b836.png" />
+                                    <br>图片
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://zhidao.baidu.com/">
+                                    <img src="images/know_3149e8f.png" />
+                                    <br>知道
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://wenku.baidu.com/">
+                                    <img src="images/wenku_a7a3f4f.png" />
+                                    <br>文库
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://top.baidu.com/">
+                                    <img src="images/bang_2719b9d.png" />
+                                    <br>风云榜
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://e.baidu.com/">
+                                    <img src="images/tuiguang_2b5cb49.png" />
+                                    <br>百度推广
+                                </a>
+                            </li>
+                            <li class="all_product">
+                                <a href="http://www.baidu.com/more/">全部产品&gt;&gt;</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- 导航区右侧结束 -->
+        </div>
+        <!-- 头部结束 -->
+        <!--  中间搜索区 -->
+        <div class="searchArea" id="searchArea">
+            <div class="boxWid">
+                <div class="logo" id="logo">
+                    <img src="images/logo_e7fae5d.png" alt="百度" />
+                </div>
+                <div class="searchBox clearfix">
+                    <form>
+                        <input type="text" class="search_input" id="search_input" />
+                        <input type="button" class="search_btn" value="百度一下" id="search_btn" />
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- 内容推荐及导航区 -->
+        <div class="contentBox" id="contentBox">
+            <div class="contentNav" id="contentNav">
+                <ul class="nav_list clearfix">
+                    <li class="active first" id="active"><em></em>我的关注</li>
+                    <li>推荐</li>
+                    <li>导航</li>
+                    <li>视频</li>
+                    <li>购物</li>
+                </ul>
+            </div>
+            <!-- 内容区 -->
+            <div class="content">
+                <!-- 我的关注区 -->
+                <div class="follow">
+                    <h3 id="myNav">
+                    <i></i>我的导航
+                    <ul class="operation_list" id="operation_list">
+                        <li>添加</li>
+                        <li>编辑</li>
+                        <li>分类显示</li>
+                        <li>返利模式</li>
+                        <li>置顶</li>
+                    </ul>
+                </h3>
+                    <p><i></i>自定义</p>
+                </div>
+                <!-- 我的关注区结束 -->
+                <!-- 推荐区 -->
+                <div class="recommend clearfix">
+                    <div class="leftArea">
+                        <div class="reco_conetnt">
+                            <h3 class="reco_head"><a href="#">工信部：今年将在全国加大流量计费监督检查</a></h3>
+                            <p class="reco_text">搜狐新闻<span>05-05&nbsp;19:03</span></p>
+                        </div>
+                        <div class="reco_conetnt">
+                            <h3 class="reco_head"><a href="#">国办：各地中小学校严禁削减挤占体育课时间</a></h3>
+                            <div class="img_box">
+                                <img src="images/news_36126b5.jpg" alt="国办：各地中小学校严禁削减挤占体育课时间" title="国办：各地中小学校严禁削减挤占体育课时间">
+                            </div>
+                            <p class="reco_text">搜狐新闻<span>05-06&nbsp;17:20</span></p>
+                        </div>
+                        <div class="reco_conetnt">
+                            <h3 class="reco_head"><a href="#">杨幂2岁女儿正面照曝光 长期见不到父母由爷爷照顾</a></h3>
+                            <p class="reco_text">搜狐新闻<span>05-06&nbsp;08:22</span></p>
+                        </div>
+                    </div>
+                    <div class="rightArea">
+                        <div class="hot">
+                            <h3 class="hot_head">实时热点</h3>
+                            <ul clss="hot_list">
+                                <li><a href="#">街头惊现黄金树</a></li>
+                                <li><a href="#">烧烤签制成春秋祠</a></li>
+                                <li><a href="#">杨幂女儿正面曝光</a></li>
+                                <li><a href="#">曝梁龙与王菲恋情</a></li>
+                                <li><a href="#">女主播不许吃香蕉</a></li>
+                                <li><a href="#">女子术后散发恶臭</a></li>
+                                <li><a href="#">误开无限透支帐户</a></li>
+                                <li><a href="#">鲍蕾晒三代美照</a></li>
+                                <li><a href="#">女学霸两考博士</a></li>
+                                <li><a href="#">男子腹痛取出黄鳝</a></li>
+                                <li><a href="#">富商娶同学女儿</a></li>
+                                <li><a href="#">安检发现迁葬骸骨</a></li>
+                                <li><a href="#">北京最荒凉地铁站</a></li>
+                                <li><a href="#">世界最长新物种</a></li>
+                                <li><a href="#">刘恺威破婚变传闻</a></li>
+                                <li><a href="#">王子文曝时尚街拍</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 推荐区结束 -->
+                <!-- 导航区 -->
+                <div class="nav">
+                    <h3 class="nav_head">猜你喜欢</h3>
+                    <div class="first_websites">
+                        <ul class="websites_list clearfix">
+                            <li><i class="site-baidu"></i><a href="#">百度</a>&nbsp;•&nbsp;<a href="#">贴吧</a></li>
+                            <li><i class="site-sina"></i><a href="#">新浪</a>&nbsp;•&nbsp;<a href="#">微博</a></li>
+                            <li><i class="site-sohu"></i><a href="#">搜狐</a>&nbsp;•&nbsp;<a href="#">视频</a></li>
+                            <li><i class="site-tencent"></i><a href="#">腾&nbsp;&nbsp;讯</a></li>
+                            <li><i class="site-netEase"></i><a href="#">网&nbsp;&nbsp;易</a></li>
+                            <li><i class="site-youku"></i><a href="#">优&nbsp;酷&nbsp;网</a></li>
+                            <li><i class="site-tmall"></i><a href="#">天&nbsp;&nbsp;猫</a></li>
+                            <li><i class="site-phoenix"></i><a href="#">凤&nbsp;凰&nbsp;网</a></li>
+                            <li><i class="site-taoBao"></i><a href="#">淘&nbsp;宝&nbsp;网</a></li>
+                            <li><i class="site_freeGame"></i><a href="#">免费游戏</a></li>
+                            <li><i class="site-game4399"></i><a href="#">4399游戏</a></li>
+                            <li><i class="site_xinhua"></i><a href="#">新华</a>&nbsp;•&nbsp;<a href="#">人民</a></li>
+                            <li><i class="site_jingDong"></i><a href="#">京东商城</a></li>
+                            <li><i class="site_juHuaSuan"></i><a href="#">聚&nbsp;划&nbsp;算</a></li>
+                            <li><i class="site_special"></i><a href="#">今日特价</a></li>
+                            <li><i class="site_movie123"></i><a href="#">hao123影视</a></li>
+                            <li><i class="site-carHome"></i><a href="#">汽车之家</a></li>
+                            <li><i class="site-lottery"></i><a href="#">彩票开奖</a></li>
+                            <li><i class="site-tmall"></i><a href="#">天&nbsp;&nbsp;猫</a></li>
+                            <li><i class="site-phoenix"></i><a href="#">凤&nbsp;凰&nbsp;网</a></li>
+                            <li><i class="site-taoBao"></i><a href="#">淘&nbsp;宝&nbsp;网</a></li>
+                            <li><i class="site_freeGame"></i><a href="#">免费游戏</a></li>
+                            <li><i class="site-game4399"></i><a href="#">4399游戏</a></li>
+                            <li><i class="site_xinhua"></i><a href="#">新华</a>&nbsp;•&nbsp;<a href="#">人民</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 导航区结束 -->
+                <!-- 视频区 -->
+                <div class="video clearfix">
+                    <div class="comic">
+                        <div class="img_box">
+                            <img src="images/sun_dee411d.jpg" alt="太阳的后裔">
+                            <div class="operation">
+                                <span class="collection"></span>
+                                <span class="delete"></span>
+                            </div>
+                        </div>
+                        <p><a href="#">太阳的后裔</a></p>
+                        <p class="level"><span></span><span></span><span></span><span></span><span></span>&nbsp;8.4</p>
+                    </div>
+                    <div class="movie">
+                        <div class="img_box">
+                            <img src="images/tennis_eec2166.jpg" alt="网球王子">
+                            <div class="operation">
+                                <span class="collection"></span>
+                                <span class="delete"></span>
+                            </div>
+                        </div>
+                        <p><a href="#">网球王子第二部</a></p>
+                        <p class="level"><span></span><span></span><span></span><span></span>&nbsp;7.7</p>
+                    </div>
+                    <div class="hot_news clearfix">
+                        <div class="hot_item_box clearfix">
+                            <div class="hot_item">
+                                <div class="news_box">
+                                    <img src="images/happy_947cd59.jpg" alt="欢乐颂》剧透：身世之谜解开 安魏CP陷窘境" title="欢乐颂》剧透：身世之谜解开 安魏CP陷窘境">
+                                    <div class="operation">
+                                        <span class="collection"></span>
+                                        <span class="delete"></span>
+                                    </div>
+                                </div>
+                                <p class="news_text"><a href="#">《欢乐颂》剧透：身世之谜解开 安魏CP陷窘境</a>
+                                </p>
+                            </div>
+                            <div class="hot_item">
+                                <div class="news_box">
+                                    <img src="images/hurt_7234fce.jpg" alt="女子留男同事在家睡觉 丈夫起疑心砍伤人获刑" title="女子留男同事在家睡觉 丈夫起疑心砍伤人获刑">
+                                    <div class="operation">
+                                        <span class="collection"></span>
+                                        <span class="delete"></span>
+                                    </div>
+                                </div>
+                                <p class="news_text"><a href="#">女子留男同事在家睡觉 丈夫起疑心砍伤人获刑</a></p>
+                            </div>
+                        </div>
+                        <div class="hot_item_box clearfix">
+                            <div class="hot_item">
+                                <div class="news_box">
+                                    <img src="images/du_e12b1ca.jpg" alt="《我是杜拉拉》球球踢球踢到拉拉肚子" title="《我是杜拉拉》球球踢球踢到拉拉肚子">
+                                    <div class="operation">
+                                        <span class="collection"></span>
+                                        <span class="delete"></span>
+                                    </div>
+                                </div>
+                                <p class="news_text"><a href="#">《我是杜拉拉》球球踢球踢到拉拉肚子</a></p>
+                            </div>
+                            <div class="hot_item">
+                                <div class="news_box">
+                                    <img src="images/horse_05325b5.jpg" alt="一马换三羊 第30集预告" title="一马换三羊 第30集预告">
+                                    <div class="operation">
+                                        <span class="collection"></span>
+                                        <span class="delete"></span>
+                                    </div>
+                                </div>
+                                <p class="news_text"><a href="#">一马换三羊 第30集预告,精彩不容错过</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 视频区结束 -->
+                <!-- 购物区 -->
+                <div class="shop clearfix">
+                    <div class="shop_img">
+                        <img src="images/mother_13ec295.jpg" alt="母亲节">
+                        <div class="shop_text">
+                            <div>
+                                <p>母亲节&nbsp;为爱买单</p>
+                            </div>
+                            <div>
+                                <p>全场低至 &nbsp;5折</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop_img">
+                        <img src="images/milk_4b23333.jpg" alt="牛奶条">
+                        <div class="shop_text">
+                            <div>
+                                <p>内蒙古特产牛奶条组合装</p>
+                            </div>
+                            <div>
+                                <p>百度返现&nbsp;70%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop_img">
+                        <img src="images/water_fd6853a.jpg" alt="巴黎水Perrier气泡矿泉水">
+                        <div class="shop_text">
+                            <div>
+                                <p>巴黎水Perrier气泡矿泉水</p>
+                            </div>
+                            <div>
+                                <p>180天降价&nbsp;直降100元</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop_list">
+                        <h3 class="shop_head">返利商城</h3>
+                        <ul class="clearfix">
+                            <li><a href="#">京东商城</a></li>
+                            <li><a href="#">百度糯米</a></li>
+                            <li><a href="#">1号店</a></li>
+                            <li><a href="#">当当网</a></li>
+                            <li><a href="#">蘑菇街</a></li>
+                            <li><a href="#">唯品会</a></li>
+                            <li><a href="#">聚美优品</a></li>
+                            <li><a href="#">聚划算</a></li>
+                            <li><a href="#">天猫超市</a></li>
+                            <li><a href="#" class="more">更多</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 购物区结束 -->
+            </div>
+            <!-- 内容区结束 -->
+        </div>
+         <!--  底部版权区 -->
+        <div class="footer clearfix" id="footer">
+            <div class="footerCon clearfic">
+                <div class="conBox" id="conBox">
+                    <p><a href="https://www.baidu.com/cache/sethelp/help.html">设为首页</a>&nbsp;&nbsp; &copyright;2016Baidu <a href="http://www.baidu.com/duty/">使用百度前必读</a>
+                        <a href="http://jianyi.baidu.com/">意见反馈</a> <span>京ICP证030173号</span></p>
+                    <p class="wangbei clearfix"><i></i><span>京公安网备11000002000001号</span></p>
+                </div>
+            </div>
+        </div>
+        <!--底部版权区结束 -->
+		</div>
+        <!-- container结束 -->
+
+        <script type="text/javascript" charset="utf-8" src="js/jquery-1.12.3.min_855e324.js"></script>
+        <script type="text/javascript" src="js/main_62ce427.js"></script>
+</body>
+
+</html>

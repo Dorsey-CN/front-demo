@@ -1,0 +1,119 @@
+/*课程推荐区*/
+.course-recommend-box {
+    margin-top: 20px;
+    .course-nav{
+    	li {
+		    float: left;
+		    .wid-len(165px,40px);
+		    line-height: 40px;
+		    border-bottom: 2px solid #F5F5F5;
+		    position: relative;
+		    text-align: center;
+		    cursor: pointer;
+		    color: color-gray2;
+		    .family-size("Microsoft YaHei",14px);
+		    &:hover{
+		    	border-bottom-color: @main-color;
+    			color: @main-color;
+		    }
+		    &:hover .arrow{
+		    	display: inline-block;
+		    }
+		}
+		.arrow {
+		    border-top-width: 0;
+		    border-bottom-color: @main-color;
+		    position: absolute;
+		    bottom: 0;
+		    left: 48%;
+		    display: none;
+		}
+    }
+    .course-recommend {
+	    width: 100%;
+	    .img-box {
+		    position: relative;
+		}
+		li {
+		    float: left;
+		    .wid-len(23%,auto);
+		    .border;
+		    margin-right: 2%;
+		    margin-top: 20px;
+		    position: relative;
+		    overflow: hidden;
+		    padding-bottom: 15px;
+		    z-index: 200;
+		    background-color: @color-white;
+		    img {
+			    display: block;
+			    .wid-len(100%,130px);
+			    cursor: pointer;
+			}
+			&:hover {
+			    opacity: 0.8;
+			}
+			&:hover i {
+			    display: inline-block;
+			}
+		}
+		span {
+		    display: inline-block;
+		    font-size: 12px;
+		    color: #808080;
+		    font-family: @family;
+		    padding: 0 10px;
+		}
+		a {
+		    font-size: 14px;
+		    color: color-gray2;
+		}
+		.course-message {
+		    display: none;
+		}
+		.course-time {
+		    display: block;
+		    i {
+			    display: inline-block;
+			    .wid-len(18px,18px);
+			    background: url(../images/keshi.png) left center no-repeat;
+			    background-size: 80%;
+			    position: relative;
+			    top: 4px;
+			}
+		}
+		.edge {
+		    margin-right: 0;
+		}
+		.play {
+		    display: inline-block;
+		    .wid-len(50px,50px);
+		    background: url(../images/play.png) left top no-repeat;
+		    background-size: 80%;
+		    position: absolute;
+		    top: 40%;
+		    left: 40%;
+		    display: none;
+		}
+		.favorite {
+		    display: inline-block;
+		    .wid-len(20px,20px);
+		    background: url(../images/favorite.png) left top no-repeat;
+		    background-size: 80%;
+		    position: absolute;
+		    top: 10px;
+		    left: 10px;
+		    display: none;
+		    &:hover {
+			    background-image: url(../images/favorite2.png);
+			}
+		}
+		.latest-course,
+		.free-course,
+		.project-practice,
+		.world-first,
+		.company-work {
+		    display: none;
+		}
+	}
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>完整版计算器</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+
+<body>
+    <!-- 包裹计算器的盒子 -->
+    <div class="cal_container">
+        <table>
+            <!-- 上方数值显示区域 -->
+            <thead>
+                <tr>
+                    <th>
+                        <input type="text" class="show_area" id="show_area" value="0" />
+                    </th>
+                </tr>
+            </thead>
+            <!-- 显示区结束 -->
+            <!-- 按钮操作区 -->
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="button" value="sin" class="special_operation" id="sin">
+                    </td>
+                    <td>
+                        <input type="button" value="cos" class="special_operation" id="cos">
+                    </td>
+                    <td>
+                        <input type="button" value="退格" id="delete" class="tool">
+                    </td>
+                    <td>
+                        <input type="button" value="清屏" id="clear" class="tool">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="1/x" class="special_operation" id="reciprocal">
+                    </td>
+                    <td>
+                        <input type="button" value="sqrt" class="special_operation" id="sqrt">
+                    </td>
+                    <td>
+                        <input type="button" value="%" class="special_operation" id="percentage">
+                    </td>
+                    <td>
+                        <input type="button" value="÷" class="symbol" id="division">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="7" class="numbers">
+                    </td>
+                    <td>
+                        <input type="button" value="8" class="numbers">
+                    </td>
+                    <td>
+                        <input type="button" value="9" class="numbers">
+                    </td>
+                    <td>
+                        <input type="button" value="x" class="symbol" id="multiplication">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="4" class="numbers">
+                    </td>
+                    <td>
+                        <input type="button" value="5" class="numbers">
+                    </td>
+                    <td>
+                        <input type="button" value="6" class="numbers">
+                    </td>
+                    <td>
+                        <input type="button" value="-" class="symbol" id="subtraction">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="1" class="numbers">
+                    </td>
+                    <td>
+                        <input type="button" value="2" class="numbers">
+                    </td>
+                    <td>
+                        <input type="button" value="3" class="numbers">
+                    </td>
+                    <td>
+                        <input type="button" value="+" class="symbol" id="add">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="0" class="numbers">
+                    </td>
+                    <td>
+                        <input type="button" value="." class="numbers" id="point">
+                    </td>
+                    <td>
+                        <input type="button" value="+/-" class="equals" id="positive_negative">
+                    </td>
+                    <td>
+                        <input type="button" value="=" class="equals" id="equals">
+                    </td>
+                </tr>
+            </tbody>
+            <!-- 操作区结束 -->
+        </table>
+    </div>
+    <script type="text/javascript" src="js/calculator.js"></script>
+    <script type="text/javascript" src="js/event.js"></script>
+</body>
+
+</html>

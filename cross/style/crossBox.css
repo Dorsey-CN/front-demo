@@ -1,0 +1,93 @@
+/*重置样式*/
+
+body,
+div {
+    margin: 0;
+    padding: 0;
+}
+
+.contentBox {
+    width: 310px;
+    height: 310px;
+    /*使主div垂直居中*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -155px 0 0 -155px;
+}
+
+
+/*为组成十字架每个div设置宽、高以及阴影效果*/
+
+.topBox,
+.leftBox,
+.middleBox,
+.rightBox,
+.bottomBox {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 5px 3px #ccc;
+}
+
+
+/*设置上面、下面以及中间div中的图片水平居中*/
+
+.topBox,
+.middleBox img,
+.bottomBox {
+    margin: 0 auto;
+}
+
+
+/*使左、中、右三个div都向左浮动*/
+
+.leftBox,
+.middleBox,
+.rightBox {
+    float: left;
+}
+
+
+/*以下是各个div自己的样式*/
+
+.topBox {
+    background-color: #296EA3;
+    margin: 0 auto;
+}
+
+.leftBox {
+    background-color: #623D7F;
+    margin-top: 5px;
+}
+
+.middleBox {
+    background-color: #D1CDD1;
+    margin: 5px;
+    /*使div的背景颜色渐变*/
+    background: -moz-linear-gradient(top, #F8F8FA 0%, #AAA6AD 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F8F8FA), color-stop(100%, #AAA6AD));
+    background: -webkit-linear-gradient(top, #F8F8FA 0%, #AAA6AD 100%);
+    background: linear-gradient(to bottom, #F8F8FA 0%, #AAA6AD 100%);
+    box-shadow: none;
+}
+
+.middleBox img {
+    width: 24px;
+    height: 24px;
+    display: block;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -12px 0 0 -12px;
+}
+
+.rightBox {
+    background-color: #2B8839;
+    margin-top: 5px;
+}
+
+.bottomBox {
+    background-color: #A4372A;
+    clear: both;
+}

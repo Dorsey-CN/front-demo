@@ -1,0 +1,57 @@
+/*职业路径区*/
+.profession-route {
+    margin-top: 40px;
+    .profession-head h2{
+    	.h2;
+    }
+    .profession-content {
+	    width: 100%;
+	    h3,
+	    p,
+	    span{
+	    	font-family: @family;
+	    }
+	    h3 {
+		    color: color-gray2;
+		    margin-bottom: 30px;
+		}
+		p {
+		    color: #7B7B7B;
+		    margin-bottom: 10px;
+		    padding-left: 10px;
+		}
+		li {
+		    float: left;
+		    width: 19.5%;
+		    .border;
+		    margin: 0 -1px -1px 0;
+		    padding-bottom: 15px;
+		    cursor: pointer;
+		    position: relative;
+		    &:hover{
+		    	border: 1px solid @main-color;
+		    }
+		    &:hover .btn-box span {
+			    color: @color-white;
+			}
+			img {
+			    .wid-len(100%,122px);
+			    padding-top: 20px;
+			}
+		}
+		.text-box,
+		.btn-box {
+		    padding-left: 15px;
+		}
+		.btn-box span {
+		    display: inline-block;
+		    line-height: 35px;
+		    .wid-len(140px,35px);
+		    background-color: #F3FFF6;
+		    border: 1px solid @main-color;
+		    text-align: center;
+		    font-size: 18px;
+		    color: #35B558;
+		}
+	}
+}

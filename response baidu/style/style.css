@@ -1,0 +1,553 @@
+/*样式重置*/
+
+body,
+div,
+ul,
+li,
+input,
+img,
+span,
+i,
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: arial;
+}
+
+input {
+    outline: none;
+    border: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    color: #000;
+}
+
+
+/*清除浮动*/
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+
+/*pc端和移动端通用*/
+
+html {
+    height: 100%;
+    min-height: 600px;
+}
+
+body {
+    position: relative;
+    height: 100%;
+    min-height: 600px;
+    min-width: 320px;
+}
+
+.boxWid {
+    width: 640px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/*移动端通用*/
+
+.title {
+    color: #666;
+    font-weight: normal;
+}
+
+.deploy {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.change {
+    display: inline-block;
+    width: 42px;
+    padding-left: 27px;
+    height: 21px;
+    background: url(../images/change.png) left top no-repeat;
+    position: absolute;
+    right: 50px;
+    top: 10px;
+}
+
+.change i {
+    font-style: normal;
+    font-family: "Microsoft YaHei", "微软雅黑";
+    font-size: 12px;
+}
+
+
+/*顶部*/
+
+.topBar {
+    height: 35px;
+    line-height: 35px;
+    padding: 15px 13px 0 0;
+}
+
+
+/*PC端顶部样式*/
+
+.rightArea {
+    float: right;
+}
+
+.right_tab {
+    float: right;
+    width: 100%;
+}
+
+.rightArea li {
+    float: right;
+    text-align: center;
+}
+
+.right_tab {
+    position: relative;
+    text-align: right;
+}
+
+.right_tab li {
+    margin-left: 15px;
+}
+
+.right_tab li a {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.right_tab .more {
+    padding: 5px 0px;
+    background-color: #3385FF;
+    color: #fff;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.right_tab li a:hover {
+    color: #00C;
+}
+
+.right_tab .clearBod {
+    font-weight: normal;
+}
+
+.show_list {
+    position: absolute;
+    left: 300px;
+    top: 20px;
+}
+
+.show_list li {
+    float: none;
+    height: 30px;
+    line-height: 30px;
+    width: 45px;
+}
+
+.show_list li a {
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+
+/*移动端特有样式*/
+
+.head-mobile,
+.logo-mobile,
+.nav-mobile,
+.common-website,
+.life-service,
+.hotspot,
+.mycard {
+    display: none;
+}
+
+.common-website,
+.life-service,
+.hotspot,
+.mycard {
+    background-color: #fff;
+}
+
+
+/*移动端顶部样式*/
+
+.headLeft {
+    padding-left: 5px;
+}
+
+.weather {
+    display: inline-block;
+    width: 34px;
+    height: 31px;
+    padding-left: 34px;
+    background: url(../images/weather.png) left top no-repeat;
+    font-family: "Microsoft YaHei", "微软雅黑";
+    font-size: 20px;
+    color: #8F8F8F;
+    margin-right: 3px;
+}
+
+.place {
+    display: inline-block;
+    font-size: 14px;
+    color: #C1C3C2;
+    vertical-align: top;
+}
+
+.headright {
+    float: right;
+    margin-top: -35px;
+}
+
+
+/*logo及搜索框*/
+
+.content {
+    margin-top: 60px;
+}
+
+.logo-pc {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.logo-mobile {
+    display: none;
+    margin: 0 auto;
+}
+
+.searchBox .search_input {
+    width: 518px;
+    height: 35px;
+    line-height: 35px\9;
+    float: left;
+    border: 1px solid #B8B8B8;
+    padding: 0 5px;
+    border-right: none;
+    background: url(../images/camera.png) right center no-repeat;
+}
+
+.searchBox .search_input:focus {
+    border-color: #3385FF;
+}
+
+.searchBox .search_btn {
+    width: 110px;
+    float: left;
+    height: 37px;
+    line-height: 37px;
+    background-color: #3385FF;
+    color: #fff;
+    font-size: 16px;
+}
+
+.searchBox .search_btn:hover {
+    background-color: #317EF3;
+    cursor: pointer;
+}
+
+
+/*移动端导航样式*/
+
+.nav-mobile {
+    margin-top: 20px;
+}
+
+.nav-mobile li {
+    float: left;
+    width: 15%;
+    text-align: center;
+    margin-right: 4px;
+    margin-bottom: 20px;
+}
+
+.nav-mobile li a {
+    text-decoration: none;
+    color: #666;
+}
+
+
+/*移动端常用网址*/
+
+.common-website,
+.life-service {
+    padding: 5px 5px 10px 10px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.website-list {
+    width: 100%;
+    position: relative;
+}
+
+.website-list .w3c {
+    margin-left: 8px;
+}
+
+.website-list .add {
+    position: absolute;
+    right: 1px;
+    bottom: -6px;
+}
+
+
+/*移动端生活服务和常用网址共用样式*/
+
+.website-list li,
+.life-service li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.website-list li a,
+.life-service li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Microsoft YaHei", "微软雅黑";
+}
+
+
+/*移动端实时热点*/
+
+.hotspot {
+    padding: 5px 5px 10px 10px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.hotspot-list li {
+    float: left;
+    width: 50%;
+    line-height: 30px;
+}
+
+.hotspot-list li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Microsoft YaHei", "微软雅黑";
+}
+
+
+/*移动端我的卡片*/
+
+.mycard,
+.deploy-all {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.deploy-all {
+    border-top: 1px solid #ccc;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.deploy-all span {
+    display: inline-block;
+    width: 27px;
+    height: 20px;
+    background: url(../images/deploy-all.png) bottom center no-repeat;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+
+/*底部版权区*/
+
+.footer {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 23px;
+}
+
+.footerCon {
+    width: 656px;
+    *width: 660px;
+    height: 100%;
+    margin: 0 auto;
+    color: #999;
+}
+
+.footerCon a {
+    color: #999;
+}
+
+.left,
+.right,
+.phone,
+.rice,
+.qr_code,
+.desc_text {
+    float: left;
+}
+
+.right p {
+    margin-bottom: 10px;
+}
+
+.rice {
+    margin: 0 35px;
+    *display: inline;
+}
+
+.qr_code {
+    margin-right: 10px;
+}
+
+.desc_text {
+    padding-top: 14px;
+}
+
+.wangbei i,
+.wangbei span {
+    float: left;
+}
+
+.wangbei i {
+    width: 25px;
+    height: 22px;
+    display: inline-block;
+    background: url(../images/wangbei.png) left center no-repeat;
+    margin-top: -3px;
+}
+
+.change_text {
+    color: #666;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+/*通过media query适配，让网页支持在移动端浏览*/
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+    body {
+        background-color: #EDEFEE;
+    }
+    .boxWid {
+        width: 95%;
+    }
+    .topBar {
+        padding-top: 5px;
+    }
+    .content {
+        margin-top: 30px;
+    }
+    .rightArea,
+    .logo-pc {
+        display: none;
+    }
+    .head-mobile,
+    .nav-mobile,
+    .common-website,
+    .hotspot,
+    .life-service,
+    .mycard,
+    .logo-mobile {
+        display: block;
+    }
+    .searchBox .search_input {
+        width: 65%;
+        background-image: url(../images/search-icon.png);
+        background-color: #fff;
+    }
+    .searchBox .search_btn {
+        width: 30%;
+        font-size: 14px;
+    }
+    .logo-mobile {
+        margin-bottom: 10px;
+    }
+    .footer {
+        position: relative;
+    }
+    .footer .left {
+        display: none;
+    }
+    .footerCon {
+        width: 65%
+    }
+    .wangbei i {
+        background-image: url(../images/wangbei2.png);
+    }
+}
+
+@media only screen and (max-width:319px){
+    body {
+        background-color: #EDEFEE;
+    }
+    .boxWid {
+        width: 95%;
+    }
+    .topBar {
+        padding-top: 5px;
+    }
+    .content {
+        margin-top: 30px;
+    }
+    .rightArea,
+    .logo-pc {
+        display: none;
+    }
+    .head-mobile,
+    .nav-mobile,
+    .common-website,
+    .hotspot,
+    .life-service,
+    .mycard,
+    .logo-mobile {
+        display: block;
+    }
+    .searchBox .search_input {
+        width: 60%;
+        background-image: url(../images/search-icon.png);
+        background-color: #fff;
+    }
+    .searchBox .search_btn {
+        width: 30%;
+        font-size: 14px;
+    }
+    .logo-mobile {
+        margin-bottom: 10px;
+    }
+    .footer {
+        position: relative;
+    }
+    .footer .left {
+        display: none;
+    }
+    .footerCon {
+        width: 65%
+    }
+    .wangbei i {
+        background-image: url(../images/wangbei2.png);
+    }
+}

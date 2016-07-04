@@ -1,0 +1,70 @@
+/*导航区*/
+
+.nav {
+    height: 40px;
+    border-bottom: 1px solid #E8E8E8;
+    box-shadow: 0,0,3px,2px,#F1F1F1;
+    display: flex;
+    .nav-box {
+	    position: relative;
+	    .first-item {
+		    .wid-len(120px,40px);
+		    line-height: 40px;
+		    float: left;
+		    a {
+			    .family-size("Microsoft YaHei",13px);
+			}
+		}
+		a{
+			&:hover {
+	            color: @main-color;
+	        }
+		}
+		.seond-list-box {
+		    width: 947px;
+		    .border;
+		    padding-left: 50px;
+		    display: none;
+		    background-color: @color-white;
+		    position: absolute;
+		    z-index: 10;
+		    .seond-list {
+			    float: left;
+			    border-left: 1px solid #F7F7F7;
+			    &:hover {
+		            background-color: #F7F7F7;
+		        }
+		        &:hover.seond-list .arrows {
+				    visibility: visible;
+				}
+				.second-item {
+				    .wid-len(120px,40px);
+				    line-height: 40px;
+				    text-align: center;
+				}
+				.arrows {
+				   .arr;
+				    border-top-width: 0;
+				    border-bottom-color: #e4e4e4;
+				    position: relative;
+				    top: -12px;
+				    right: -81px;
+				    visibility: hidden;
+				}
+			}
+		}
+	}
+	.user-need {
+	    padding-top: 8px;
+	    img {
+		    position: relative;
+		    top: 3px;
+		}
+		a {
+		    margin-right: 15px;
+		    &:hover {
+                color: @main-color;
+            }
+		}
+	}
+}

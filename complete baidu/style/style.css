@@ -1,0 +1,241 @@
+/*样式重置*/
+
+body,
+div,
+ul,
+li,
+input,
+img,
+span,
+i ,
+p{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: arial;
+}
+
+input {
+    outline: none;
+    border: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    color: #000;
+}
+
+
+/*清除浮动*/
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+
+/*通用*/
+
+.boxWid {
+    width: 640px;
+    margin: 0 auto;
+    position: relative;
+}
+
+html{
+    height: 100%;
+	min-height: 600px;
+	
+} 
+
+body {
+    position: relative;
+    height: 100%;
+    min-height: 600px;
+}
+
+
+/*顶部*/
+
+.topBar {
+    height: 35pxl;
+    line-height: 35px;
+    padding: 15px 13px 0 0;
+}
+.rightArea {
+    float: right;
+}
+
+.right_tab{
+	-float:right;
+}
+.rightArea li {
+    float: left;
+    text-align: center;
+}
+
+.right_tab {
+    position: relative;
+}
+
+.right_tab li {
+    margin-left: 20px;
+}
+
+.right_tab li a {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.right_tab .more {
+    padding: 7px 5px;
+    background-color: #3385FF;
+    color: #fff;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.right_tab li a:hover {
+    color: #00C;
+}
+
+.right_tab .clearBod {
+    font-weight: normal;
+}
+
+.show_list {
+    position: absolute;
+    left: 300px;
+    top: 20px;
+}
+
+.show_list li {
+    float: none;
+    height: 30px;
+    line-height: 30px;
+    width: 45px;
+}
+
+.show_list li a {
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+
+/*logo及搜索框*/
+
+.content {
+    margin-top: 60px;
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.searchBox .search_input {
+    width: 518px;
+    height: 35px;
+    line-height: 35px\9;
+    float: left;
+    border: 1px solid #B8B8B8;
+    padding: 0 5px;
+    border-right: none;
+    background: url(../images/camera.png) right center no-repeat;
+}
+
+.searchBox .search_input:focus {
+    border-color: #3385FF;
+}
+
+.searchBox .search_btn {
+    width: 110px;
+    float: left;
+    height: 37px;
+    line-height: 37px;
+    background-color: #3385FF;
+    color: #fff;
+    font-size: 16px;
+}
+
+.searchBox .search_btn:hover {
+    background-color: #317EF3;
+    cursor: pointer;
+}
+
+
+/*底部版权区*/
+
+.footer {
+    height: 100px;
+    width:100%;
+    /* width:646px; */
+    position: absolute;
+    bottom: 23px;
+}
+
+.footerCon {
+    width: 656px;
+	*width:660px;
+    height: 100%;
+    margin: 0 auto;
+    color:#999;
+}
+.footerCon a{
+    color:#999;
+}
+
+.left,
+.right,
+.phone,
+.rice,
+.qr_code,
+.desc_text {
+    float: left;
+}
+
+.right{
+	
+}
+.right p{
+	margin-bottom:10px;
+}
+.rice {
+    margin: 0 35px;
+	*display:inline;
+}
+
+.qr_code {
+    margin-right: 10px;
+}
+.desc_text{
+	padding-top:14px;
+}
+.wangbei i,.wangbei span{
+    float: left;
+}
+
+.wangbei i{
+    width: 25px;
+    height: 22px;
+    display: inline-block;
+    background: url(../images/wangbei.png) left  center no-repeat;
+    margin-top: -3px;
+}
+
+.change_text{
+    color:#666;
+    font-weight: bold;
+	margin-bottom:10px;
+}

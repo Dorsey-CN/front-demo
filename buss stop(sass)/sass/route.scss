@@ -1,0 +1,98 @@
+
+.station-box{
+	width:100%;
+    margin-bottom:10px;
+	.current-box{
+        @include wid-len(100%,60px);
+		background-color:$bg-main;
+		padding-top:5px;
+		.current-station{
+			margin:0 auto;
+		    border-radius: 10px;
+		    font-weight: bold;
+            @include init(200px,50px,$color-red,18px,$color-white);
+		}
+	}
+	.route-box{
+		background-color:$bg-main;
+		padding:5px 15px; 
+		.route-box-head{
+            .route{
+                @include fl(left);
+                p{
+                    @include init(95px,50px,$color-red,14px,$color-white);
+                    span{
+                        font-size:25px;
+                        font-weight:bold;
+                    }
+                }
+            }
+            .route-message{
+                @include fl(left);
+                margin-left:30px;
+                .start-end{
+                    span{
+                        display:inline-block;
+                        color:#0FA14F;
+                        font-size:16px;
+                        font-weight:bold;
+                    }
+                    .line{
+                        margin:0 10px;
+                    }
+                }
+                .next-station{
+                    p{
+                        font-size:14px;
+                        font-weight:bold;
+                        padding:12px 55px;
+                    }
+                }
+            }
+		}
+        .specific-route{
+            background-color:#0FA14F;
+            .route-list{
+                padding:20px 0 20px 20px;
+                li{
+                    @include fl(left);
+                    width:10px;
+                    margin-right:7px;
+                    color:$color-white;
+                    font-size:14px;
+                }
+                .current{
+                    color:#ECC20A;
+                }
+            }
+        }
+        .time-price{
+            position:relative;
+            padding-bottom:10px;
+            .time-price-info{
+                width:87%;
+                border-bottom:2px solid $color-red;
+                padding-left:30px;
+                padding-bottom:5px;
+                font-size:14px;
+                span{
+                    margin-right:15px;
+                }
+            }
+            .arrow{
+                display: inline-block;
+                border: 10px solid transparent;
+                border-right-width: 0;
+                border-left-color: $color-red;
+                position: absolute;
+                top: 11px;
+                right: 21px;
+            }
+            @-moz-document url-prefix(){
+                .arrow{
+                    top:15px !important;
+                }   
+            }
+        }
+	}
+}

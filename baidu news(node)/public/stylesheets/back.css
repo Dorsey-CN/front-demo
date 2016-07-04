@@ -1,0 +1,182 @@
+input {
+    outline: none;
+}
+
+.admin {
+    margin-right: -25px;
+}
+
+
+/*清除浮动*/
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.lf {
+    float: left;
+}
+
+
+/*中间内容区*/
+
+.content {
+    margin-top: 53px;
+}
+
+.addHeight {
+    height: 400px;
+}
+
+
+/*内容区左侧*/
+
+.left-nav {
+    background-color: #222;
+    margin-top: 18px;
+    height: 100%;
+}
+
+.content .nav-pills li {
+    margin-bottom: 2px;
+}
+
+.content .nav-pills li a {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    background-color: #3A3A3A;
+    color: #fff;
+    background: url(../images/deploy2.png) right center no-repeat;
+    border-bottom: 1px solid #3A3A3A;
+}
+
+.content .nav-pills li a img {
+    margin-right: 5px;
+}
+
+.content .nav-pills li a:hover {
+    /*background-color: #666;*/
+}
+
+.page-header {
+    background: -moz-linear-gradient(top, #FEFEFE 0%, #E9E9E9 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FEFEFE), color-stop(100%, #E9E9E9));
+    background: -webkit-linear-gradient(top, #FEFEFE 0%, #E9E9E9 100%);
+    background: linear-gradient(to bottom, #FEFEFE 0%, #E9E9E9 100%);
+    padding-left: 10px;
+}
+
+
+/*内容区右侧*/
+
+.right-con .navbar {
+    background-color: #DDEFFB;
+}
+
+.add-news {
+    /*float:right;*/
+    position: absolute;
+    right: 0;
+    top: 65px;
+}
+
+.add-news h5 {
+    color: #337AB7;
+}
+
+.news-list {
+    margin-top: 30px;
+}
+
+.table{
+    table-layout:fixed
+}
+
+.tb td {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+/*分页另加样式*/
+
+.pagination li a {
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.dangerous {
+    color: red;
+}
+
+
+/*插件样式*/
+
+
+/* reveal-modal */
+
+.reveal-modal-bg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    z-index: 100;
+    display: none;
+    top: 0;
+    left: 0;
+}
+
+.reveal-modal {
+    visibility: hidden;
+    top: 100px;
+    left: 50%;
+    margin-left: -300px;
+    width: 420px;
+    background: #eee url(../images/modal-gloss.png) no-repeat -200px -80px;
+    position: absolute;
+    z-index: 101;
+    padding: 30px 40px 34px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    -box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+}
+
+.reveal-modal .input {
+    width: 250px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+.reveal-modal .close-reveal-modal {
+    font-size: 22px;
+    line-height: .5;
+    position: absolute;
+    top: 8px;
+    right: 11px;
+    color: #aaa;
+    text-shadow: 0 -1px 1px rbga(0, 0, 0, .6);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.reveal-modal h2 {
+    font-size: 18px;
+    color: #990000;
+    padding: 0 0 20px 0;
+}
+
+.reveal-modal p {
+    padding: 0 0 15px 0;
+}

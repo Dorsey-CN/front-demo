@@ -1,0 +1,188 @@
+/*样式重置*/
+
+body,
+div {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*正常盒子与怪异盒子*/
+
+.shoesBox {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 5px solid #ccc;
+    margin: 20px auto;
+    box-shadow: 0 0 5px 3px #ccc;
+}
+
+.shoes {
+    width: 100px;
+    height: 100px;
+    background-color: #EC00FF;
+}
+
+.shoesBox1 {
+    width: 130px;
+    height: 130px;
+    padding: 10px;
+    border: 5px solid #FF7300;
+    margin: 20px auto;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px 3px #ccc;
+}
+
+.shoes1 {
+    width: 100px;
+    height: 100px;
+    background-color: #42C7B3;
+}
+
+
+/*弹性盒子水平分栏且flex排序*/
+
+.con1 {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px 3px #ccc;
+}
+
+.first {
+    height: 100px;
+    background-color: orange;
+    -webkit-flex: 1;
+    -webkit-order: 2;
+}
+
+.second {
+    height: 100px;
+    background-color: #81D6AE;
+    -webkit-flex: 1;
+    -webkit-order: 3;
+}
+
+.three {
+    height: 200px;
+    background-color: #E6C944;
+    -webkit-flex: 1;
+    -webkit-order: 1;
+}
+
+
+/*弹性盒子垂直分栏且flex排序*/
+
+.con2 {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px 3px #ccc;
+}
+
+.four {
+    height: 100px;
+    background-color: orange;
+    -webkit-flex: 1;
+    -webkit-order: 3;
+}
+
+.five {
+    height: 100px;
+    background-color: #81D6AE;
+    -webkit-flex: 1;
+    -webkit-order: 2;
+}
+
+.six {
+    height: 200px;
+    background-color: #E6C944;
+    -webkit-flex: 1;
+    -webkit-order: 1;
+}
+
+
+/*使用column分栏*/
+
+.con3 {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #ccc;
+    column-count: 3;
+    -webkit-column-count: 3;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px 3px #ccc;
+}
+
+.seven {
+    height: 200px;
+    background-color: orange;
+}
+
+.eight {
+    height: 200px;
+    background-color: #81D6AE;
+}
+
+.nine {
+    height: 200px;
+    background-color: #E6C944;
+    text-align: center;
+    line-height: 200px;
+}
+
+
+/*旧版弹性盒子居中布局*/
+
+.con4 {
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    background-color: #999;
+    display: -webkit-box;
+    display: -moz-box;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-shadow: 0 0 5px 3px #ccc;
+}
+
+.ten {
+    height: 200px;
+    width: 300px;
+    background-color: #C93849;
+    text-align: center;
+    line-height: 200px;
+}
+
+
+/*设置各个盒子的文字居中显示*/
+
+.three,
+.six,
+.seven,
+.eight,
+.nine,
+.ten {
+    text-align: center;
+    line-height: 200px;
+}
+
+.first,
+.second,
+.four,
+.five,
+.shoes,
+.shoes1 {
+    text-align: center;
+    line-height: 100px;
+}

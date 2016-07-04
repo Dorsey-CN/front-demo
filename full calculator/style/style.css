@@ -1,0 +1,95 @@
+/*样式重置*/
+
+div,
+table,
+thead,
+tbody,
+tr,
+td,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    border: 0;
+    outline: none;
+}
+
+/*计算机主体样式*/
+
+/*包裹计算机的父盒子*/
+.cal_container {
+    width: 437px;
+    height: 448px;
+    background: url(../images/siverbg.png) left top no-repeat;
+    margin: 50px auto;
+    position: relative;
+}
+
+/*数值显示区域*/
+table .show_area {
+    width: 398px;
+    height: 58px;
+    line-height: 58px\9;
+    margin: 12px 0 0 12px;
+    text-align: right;
+    font-size: 45px;
+    padding :0 3px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.cal_container tbody {
+    display: inline-block;
+    margin-top: 45px;
+    padding-left: 10px;
+    position: relative;
+    *display: block;
+}
+
+/*计算器上每一个按钮的样式*/
+
+.cal_container td input {
+	width: 94px;
+    height: 44px;
+    line-height: 44px\9;
+    margin: 0 5px 8px 0;
+    /*display: inline-block;*/
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+/*为不同的按钮设置不同的背景图片*/
+.special_operation {
+    background: url(../images/d1btn.gif) left top no-repeat;
+	/* background-position:0 -44px; */
+}
+
+.tool {
+    background: url(../images/d0btn.gif) left top no-repeat;
+}
+
+.symbol {
+    background: url(../images/d2btn.gif) left top no-repeat;
+}
+
+.numbers {
+    background: url(../images/d3btn.gif) left top no-repeat;
+}
+
+.equals {
+    background: url(../images/d4btn.gif) left top no-repeat;
+}
+
+.gap{
+    display: block;
+    height: 50px;
+    width:100px;
+    background-color: red;
+}

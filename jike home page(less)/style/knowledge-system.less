@@ -1,0 +1,70 @@
+/*知识体系图*/
+
+.knowledge-system {
+    margin-top: 40px;
+    .knowledge-head h2{
+    	.h2;
+    }
+    .knowledge-content {
+	    width: 100%;
+	    li {
+		    float: left;
+		    .wid-len(16.2%,93px);
+		    .border;
+		    margin: 0 -1px -1px 0;
+		    cursor: pointer;
+		    position: relative;
+		    img {
+			    width: 40%;
+			}
+		}
+		.img-box {
+		    padding-left: 65px;
+		}
+		p,
+		h3{
+			width: 100%;
+		    text-align: center;
+		    font-family: @family;
+		}
+		p{
+			color: #49BC69;
+		}
+		h3{
+			color: @color-gray2;
+		}
+		.front,
+		.back{
+		    .wid-len(100%,78px);
+		    padding-top: 15px;
+		    position: absolute;
+		    left: 0;
+		    top: 0;
+		    transition: 1s;
+		}
+		.front{
+			background-color: @color-white;
+			backface-visibility:hidden;
+			transform:rotateY(0deg);
+			z-index: 5;
+		}
+		.back {
+		    background-color: #F5F5F5;
+		    p {
+			    color: @color-gray2;
+			    margin-bottom: 5px;
+			    .family-size("Microsoft YaHei",14px);
+			}
+			.study-btn {
+			    display: block;
+			    .wid-len(140px,35px);
+			    margin: 0 auto;
+			    background-color: #49BC69;
+			    color:@color-white;
+			    text-align: center;
+			    line-height: 35px;
+			    .family-size("Microsoft YaHei",16px);
+			}
+		}
+	}
+}

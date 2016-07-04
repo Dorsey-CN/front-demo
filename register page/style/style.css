@@ -1,0 +1,189 @@
+/*样式重置*/
+
+body,
+div,
+table,
+tr,
+td,
+th,
+p,
+h4,
+span,
+input,
+textarea,
+select,
+option {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+i {
+    font-style: normal;
+}
+
+body {
+    font-size: 12px;
+    background: url(../images/beijing.gif);
+}
+
+textarea {
+    text-align: start;
+    padding: 2px 0 0 2px;
+}
+
+h4 {
+    margin: 10px 0;
+}
+
+
+/*清除浮动*/
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+
+/*body样式*/
+
+
+/*父盒子样式*/
+
+.contentBox {
+    background-color: #fff;
+    width: 710px;
+    margin-top: 10px;
+    padding-bottom: 35px;
+    border-radius: 10px;
+    -webkit-border-radius: 30px;
+}
+
+
+/*顶部样式*/
+
+.topBar {
+    padding: 10px 40px;
+}
+
+.leftArea {
+    float: left;
+    cursor: pointer;
+}
+
+.rightArea {
+    float: right;
+    margin-top: 55px;
+}
+
+.rightArea a {
+    color: #FF0099;
+    font-size: 13px;
+}
+
+.rightArea a:hover {
+    text-decoration: underline;
+}
+
+
+/*表格样式*/
+
+caption {
+    font-family: "Microsoft Yahei", "微软雅黑";
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 640px;
+    border: 0
+}
+
+tr {
+    background-color: #fff;
+}
+
+th {
+    font-weight: normal;
+    line-height: 17px;
+    padding: 5px;
+}
+
+th a {
+    text-decoration: underline;
+}
+
+td p {
+    display: inline-block;
+    color: blue;
+    line-height: 18px;
+}
+
+
+/*为表格每一个大标题设置样式*/
+
+.title {
+    background-color: #EEEEEE;
+    height: 25px;
+    line-height: 25px;
+}
+
+.title td {
+    color: #003399;
+    font-weight: bold;
+    padding-left: 17px;
+}
+
+
+/*具体表格内容控制样式*/
+
+.td_left {
+    width: 135px;
+}
+
+.td_right {
+    padding: 3px 18px 3px 3px;
+}
+
+.red {
+    color: #FF0000;
+}
+
+.check {
+    display: inline-block;
+    line-height: 22px;
+}
+
+.position {
+    font-weight: bold;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+
+/*提交按钮*/
+
+.subBtn {
+    width: 86px;
+    height: 20px;
+}
+
+
+/*底部版权区*/
+
+.footer {
+    padding-top: 10px;
+}
+
+.footer span {
+    color: #666666;
+}

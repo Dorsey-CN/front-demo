@@ -1,0 +1,117 @@
+/*极客学院信息*/
+
+.jike-info {
+    margin-top: 40px;
+    padding: 30px 0;
+    width: 100%;
+    border-top: @border;
+    border-bottom: @border;
+    .info-content{
+    	float:left;
+    	.info-list{
+	    	li {
+			    line-height: 20px;
+			}
+			>li {
+			    float: left;
+			    width: 150px;
+			    border-left: @border;
+			    padding-left: 35px;
+			}
+			a {
+			    color: #999;
+			    font-size: 14px;
+			    font-family:@family;
+			    &:hover {
+				    color: @main-color;
+				}
+			}
+			.second-list a {
+			    font-size: 12px;
+			}
+    	}
+    }
+    .jike-contact {
+    	float:left;
+	    border-left:  @border;
+	    padding-left: 40px;
+	    p,
+	    h2{
+	    	color: #999;
+    		font-family: @family;
+	    }
+	    .img-box,
+	    .text-box{
+	    	float:left;
+	    }
+	    .motto p {
+		    color: @main-color;
+		    font-size: 16px;
+		    margin-bottom: 15px;
+		}
+		.mobile-client{
+			.text-box {
+			    padding-left: 15px;
+			    line-height: 25px;
+			}
+			img {
+			    width: 20px;
+			    height: 40px;
+			    .wid-len(20px,40px);
+			    position: relative;
+			    top: 5px;
+			}
+			p {
+			    font-size: 14px;
+			}
+			h2 {
+			    color: @color-gray;
+			}
+			a{
+				&:hover h2,p{
+					color: @main-color;
+				}
+			}
+		}
+		.contact-method {
+		    margin: 10px 0;
+		    .microblog,
+			.post-bar,
+			.WeChat {
+			    display: inline-block;
+			    .wid-len(35px,35px);
+			    background: url(../images/icon2.png) left top no-repeat;
+			    margin-right: 5px;
+			    cursor: pointer;
+			}
+			.microblog {
+			    .bg-position(-18px,5px);
+			    position: relative;
+			    left: -6px;
+			}
+
+			.post-bar {
+			    .bg-position(-142px,5px);
+			}
+
+			.WeChat {
+			    .bg-position(-18px,77px);
+			}
+		}
+		.contact-us{
+			.customer-service {
+			    display: inline-block;
+			    .wid-len(42px,42px);
+			    background: url(../images/chater.png) left top no-repeat;
+			    background-size: 198%;
+			    position: relative;
+			    left: -10px;
+			}
+			a{
+				&:hover h2,p{
+					color: @main-color;
+				}
+			}
+		}
+	}
+}

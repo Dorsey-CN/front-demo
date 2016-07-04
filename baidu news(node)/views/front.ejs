@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title><%=title%></title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/front.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top-bar">
+            <div class="box-width">
+                <div class="news-head clearfix">
+                    <div class="left-area">
+                        <span class="baidu"></span>
+                        <span class="user"></span>
+                    </div>
+                    <div class="logo-box">
+                        <img src="images/logo.png" alt="百度">
+                    </div>
+                    <div class="right-area">
+                        <span class="search"></span>
+                        <span class="add"></span>
+                    </div>
+                </div>
+                <!-- head结束 -->
+                <div class="news-nav">
+                    <ul class="news-nav-list clearfix">
+                        <li class="active"><a href="#" id="recommend">推荐</a></li>
+                        <li><a href="#" id="baijia">百家</a></li>
+                        <li><a href="#" id="society">社会</a></li>
+                        <li><a href="#" id="picture">图片</a></li>
+                        <li><a href="#" id="entertainment">娱乐</a></li>
+                    </ul>
+                </div>
+                <!-- nav结束 -->
+            </div>
+        </div>
+        <!-- top-bar结束 -->
+        
+        <div class="news-content">
+            <div class="box-width">
+
+                <div class="recommend">
+                	<div class="img-news">
+                		<a href="#">
+                			<img src="<%=newsCon[0].imgsrc%>" alt="jds" />
+                			<span class="describe-text"><%=newsCon[0].title%></span>
+                		</a>
+	                </div>
+                	<%
+                	for(var i=1;i<newsCon.length;i++){
+                		var year = newsCon[i].addtime.getFullYear();
+                        var month = newsCon[i].addtime.getMonth()+1;
+                        var day =newsCon[i].addtime.getDate(); 
+                         if(month<10){
+                            month = '0'+month;
+                         }
+                         if(day<10){
+                            day = '0'+day;
+                         }
+                	%>
+	                	<div class="news-list-item clearfix">
+	                		<div class="img-box">
+	                			<img src="<%=newsCon[i].imgsrc%>"" />
+	                		</div>
+	                		<div class="text-box">
+	                			<p class="news-text"><%=newsCon[i].title%></p>
+	                			<span class="add-time"><%=year+'-'+month+'-'+day%></span>
+	                		</div>
+	                	</div>
+                	<%}%>
+                </div>
+                <!-- recommend结束 -->
+                <div class="baijia">
+                </div>
+                <!-- baijia结束 -->
+                <div class="society">
+                </div>
+                <!-- society结束 -->
+                <div class="picture">
+                </div>
+                <!-- picture结束 -->
+                <div class="entertainment">
+                </div>
+                <!-- entertainment结束 -->
+            </div>
+        </div>
+        <!-- news-content结束 -->
+    </div>
+    <script type="text/javascript" src="javascripts/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="javascripts/front.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>自制课程表</title>
+</head>
+<style type="text/css">
+/*样式重置*/
+
+p,
+table,
+tr,
+td,
+th {
+    margin: 0;
+    padding: 0;
+}
+
+
+/**对于table样式的控制*/
+
+table {
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+th,
+td {
+    text-align: center;
+}
+
+th {
+    color: #606060;
+    height: 30px;
+}
+
+td {
+    color: #fff;
+    width: 60px;
+}
+
+.title td {
+    color: #606060;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Microsoft Yahei", "微软雅黑";
+    color: #09798D;
+}
+</style>
+
+<body>
+    <table border="0" bgcolor="#ccc" cellspacing="1" height="500">
+        <caption>
+            <p>课 程 表</p>
+        </caption>
+        <!--课程表表头-->
+        <thead>
+            <tr bgcolor="#fff">
+                <th>项目</th>
+                <th colspan="5">上课</th>
+                <th colspan="2">休息</th>
+            </tr>
+        </thead>
+        <!--课程表内容-->
+        <tbody>
+            <tr bgcolor="#D9D9D9" class="title">
+                <td>星期</td>
+                <td>星期一</td>
+                <td>星期二</td>
+                <td>星期三</td>
+                <td>星期四</td>
+                <td>星期五</td>
+                <td>星期六</td>
+                <td>星期日</td>
+            </tr>
+            <tr bgcolor="#A0D24D">
+                <td rowspan="4" bgcolor="#31C37C" color="">上午</td>
+                <td>java</td>
+                <td>javascrpt</td>
+                <td>node.js</td>
+                <td>PHP</td>
+                <td>C#</td>
+                <td rowspan="4" colspan="2" bgcolor="#31C37C">休息</td>
+            </tr>
+            <tr bgcolor="#969BFF">
+                <td>node.js</td>
+                <td>C#</td>
+                <td>javascrpt</td>
+                <td>PHP</td>
+                <td>java</td>
+            </tr>
+            <tr bgcolor="#F94C48">
+                <td>PHP</td>
+                <td>node.js</td>
+                <td>java</td>
+                <td>C#</td>
+                <td>javascrpt</td>
+            </tr>
+            <tr bgcolor="#FFB234">
+                <td>javascrpt</td>
+                <td>PHP</td>
+                <td>C#</td>
+                <td>node.js</td>
+                <td>java</td>
+            </tr>
+            <tr bgcolor="#4CBEE2">
+                <td rowspan="2" bgcolor="#31C37C">下午</td>
+                <td>C#</td>
+                <td>java</td>
+                <td>node.js</td>
+                <td>PHP</td>
+                <td>javascrpt</td>
+                <td rowspan="2" colspan="2" bgcolor="#31C37C">休息</td>
+            </tr>
+            <tr bgcolor="#FE963F">
+                <td>java</td>
+                <td>javascrpt</td>
+                <td>PHP</td>
+                <td>C#</td>
+                <td>node.js</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

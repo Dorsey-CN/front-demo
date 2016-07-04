@@ -1,0 +1,264 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>系统首页</title>
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- 顶部区域 -->
+    <div class="topBar">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand">Fee任务管理系统</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="admin">
+                            <a href="#"><img src="images/admin.png" alt="admin"></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">admin <span class="caret"></span></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </div>
+    <!-- topBar结束 -->
+    <!-- 中间导航和内容区 -->
+    <div class="content">
+        <div class="container">
+            <div class="row addHeight">
+                <!-- 左侧导航区 -->
+                <div class="left-nav col-xs-0 col-sm-3 col-md-2">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li role="presentation">
+                            <a href="#"><img src="images/home.png" alt="首页">首页</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#"><img src="images/user2.png" alt="首页">人员管理</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#"><img src="images/system.png" alt="首页">系统配置</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#"><img src="images/task.png" alt="首页">任务管理</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#"><img src="images/query.png" alt="首页">查询统计</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#"><img src="images/user2.png" alt="首页">人员管理</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#"><img src="images/system.png" alt="首页">系统配置</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#"><img src="images/task.png" alt="首页">任务管理</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#"><img src="images/query.png" alt="首页">查询统计</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 右侧内容区 -->
+                <div class="right-con col-xs-12 col-sm-9 col-md-10">
+                    <div class="page-header">
+                        <h4>首页&raquo;任务管理</h4>
+                    </div>
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">任务搜索</a>
+                            </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                                <ul class="nav navbar-nav">
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">值班任务 <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">周一</a></li>
+                                            <li><a href="#">周二</a></li>
+                                            <li><a href="#">周三</a></li>
+                                            <li><a href="#">周四</a></li>
+                                            <li><a href="#">周五</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <form class="navbar-form navbar-left" role="search">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="关键字">
+                                    </div>
+                                    <button type="submit" class="btn btn-default">搜索</button>
+                                </form>
+                            </div>
+                            <!-- /.navbar-collapse -->
+                        </div>
+                        <!-- /.container-fluid -->
+                    </nav>
+                    <!-- 详细信息区 -->
+                    <div class="table-responsive">
+                        <table class="table  table-striped table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>新闻类别</th>
+                                    <th>新闻标题</th>
+                                    <th>图片地址</th>
+                                    <th>更新时间</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tb">
+                                <tr>
+                                    <td>1001</td>
+                                    <td>普通</td>
+                                    <td>院办网络调整</td>
+                                    <td>2016-4-17</td>
+                                    <td>Dorsy</td>
+                                    <td><a href="#">编辑</a> <a href="#">删除</a> <a href="#">复制</a></td>
+                                </tr>
+                                <tr>
+                                    <td>1002</td>
+                                    <td>普通</td>
+                                    <td>工作室hope97显卡驱动修复</td>
+                                    <td>2016-4-16</td>
+                                    <td>Dorsy</td>
+                                    <td><a href="#">编辑</a> <a href="#">删除</a> <a href="#">复制</a></td>
+                                </tr>
+                                <tr>
+                                    <td>1003</td>
+                                    <td>普通</td>
+                                    <td>材料所符老师系统重装</td>
+                                    <td>2016-4-15</td>
+                                    <td>Dorsy</td>
+                                    <td><a href="#">编辑</a> <a href="#">删除</a> <a href="#">复制</a></td>
+                                </tr>
+                                <tr>
+                                    <td>1004</td>
+                                    <td><span class="dangerous">紧急</span></td>
+                                    <td>何同学索尼VAIO笔记本修复与重装</td>
+                                    <td>2016-4-14</td>
+                                    <td>Dorsy</td>
+                                    <td><a href="#">编辑</a> <a href="#">删除</a> <a href="#">复制</a></td>
+                                </tr>
+                                <tr>
+                                    <td>1005</td>
+                                    <td>普通</td>
+                                    <td>院办网络调整</td>
+                                    <td>2016-4-13</td>
+                                    <td>Dorsy</td>
+                                    <td><a href="#">编辑</a> <a href="#">删除</a> <a href="#">复制</a></td>
+                                </tr>
+                                <tr>
+                                    <td>1006</td>
+                                    <td>普通</td>
+                                    <td>工作室hope97显卡驱动修复</td>
+                                    <td>2016-4-12</td>
+                                    <td>Dorsy</td>
+                                    <td><a href="#">编辑</a> <a href="#">删除</a> <a href="#">复制</a></td>
+                                </tr>
+                                <tr>
+                                    <td>1007</td>
+                                    <td>普通</td>
+                                    <td>材料所符老师系统重装</td>
+                                    <td>2016-4-11</td>
+                                    <td>Dorsy</td>
+                                    <td><a href="#">编辑</a> <a href="#">删除</a> <a href="#">复制</a></td>
+                                </tr>
+                                <tr>
+                                    <td>1008</td>
+                                    <td>普通</td>
+                                    <td>何同学索尼VAIO笔记本修复与重装</td>
+                                    <td>2016-4-10</td>
+                                    <td>Dorsy</td>
+                                    <td><a href="#">编辑</a> <a href="#">删除</a> <a href="#">复制</a></td>
+                                </tr>
+                                <tr>
+                                    <td>1009</td>
+                                    <td><span class="dangerous">紧急</span></td>
+                                    <td>院办网络调整</td>
+                                    <td>2016-4-13</td>
+                                    <td>Dorsy</td>
+                                    <td><a href="#">编辑</a> <a href="#">删除</a> <a href="#">复制</a></td>
+                                </tr>
+                                <tr>
+                                    <td>1010</td>
+                                    <td>普通</td>
+                                    <td>工作室hope97显卡驱动修复</td>
+                                    <td>2016-4-12</td>
+                                    <td>Dorsy</td>
+                                    <td><a href="#">编辑</a> <a href="#">删除</a> <a href="#">复制</a></td>
+                                </tr>
+                                <tr>
+                                    <td>1011</td>
+                                    <td>普通</td>
+                                    <td>材料所符老师系统重装</td>
+                                    <td>2016-4-11</td>
+                                    <td>Dorsy</td>
+                                    <td><a href="#">编辑</a> <a href="#">删除</a> <a href="#">复制</a></td>
+                                </tr>
+                                <tr>
+                                    <td>1012</td>
+                                    <td>普通</td>
+                                    <td>何同学索尼VAIO笔记本修复与重装</td>
+                                    <td>2016-4-10</td>
+                                    <td>Dorsy</td>
+                                    <td><a href="#">编辑</a> <a href="#">删除</a> <a href="#">复制</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <nav>
+                                <ul class="pagination col-xs-12 col-md-4">
+                                    <li><a href="#">首页 <span class="sr-only"></span></a></li>
+                                    <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                                    <li class="active"><a href="#">1 <span class="sr-only"></span></a></li>
+                                    <li><a href="#">2 <span class="sr-only"></span></a></li>
+                                    <li><a href="#">3 <span class="sr-only"></span></a></li>
+                                    <li><a href="#">... <span class="sr-only"></span></a></li>
+                                    <li><a href="#" aria-label="Previous"><span aria-hidden="true">&raquo;</span></a></li>
+                                    <li><a href="#">尾页 <span class="sr-only"></span></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!-- right-con结束 -->
+            </div>
+            <!-- row结束 -->
+        </div>
+        <!-- container结束 -->
+    </div>
+    <!-- content结束 -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

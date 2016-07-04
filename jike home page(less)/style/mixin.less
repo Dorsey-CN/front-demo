@@ -1,0 +1,50 @@
+
+.box-width {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.left-area {
+    float: left;
+}
+
+.right-area {
+    float: right;
+}
+
+.border(@border:1px solid #e4e4e4){
+	border:@border;
+}
+
+.wid-len(@width:1px,@height:1px){
+	width:@width;
+	height:@height;
+}
+
+.family-size(@family:"Microsoft YaHei",@size:12px){
+	font-family:@family;
+	font-size:@size;
+}
+
+.arr(){
+	display: inline-block;
+    border: 5px solid transparent;
+}
+
+.btn(){
+	display: inline-block;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+}
+
+.bg-position(@horizontal:0,@vertical:0){
+	background-position:@horizontal @vertical;
+}
+
+.h2(){
+	font-family: @family;
+    color: #7B7B7B;
+    margin-bottom: 20px;
+}

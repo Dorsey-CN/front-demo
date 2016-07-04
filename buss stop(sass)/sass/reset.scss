@@ -1,0 +1,23 @@
+
+body,
+div,
+p,
+span {
+    margin: 0;
+    padding: 0;
+    font-size:12px;
+}
+
+ul li{
+    list-style:none;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}

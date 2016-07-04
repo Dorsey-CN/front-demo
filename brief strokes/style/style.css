@@ -1,0 +1,236 @@
+/*样式重置*/
+body,
+div{
+	margin:0;
+	padding:0;
+}
+
+.pig{
+	width:200px;
+	margin:100px auto;
+	position:relative;
+}
+/* 头部 */
+.head{
+	width:150px;
+	height:150px;
+	border:2px solid #000;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius:50%;
+	position:relative;
+	z-index:3;
+}
+/* 左耳 */
+.left_ear{
+	width:50px;
+	height:40px;
+	border:2px solid #000;
+	-webkit-border-radius:30px 5px 40px 5px;
+	-moz-border-radius:30px 5px 40px 5px;
+	border-radius: 30px 5px 40px 5px;
+	
+	-webkit-transform:rotate(63deg);
+	-moz-transform:rotate(63deg);
+	-o-transform:rotate(63deg);
+	-ms-transform:rotate(63deg);
+	transform:rotate(63deg);
+	
+	position:absolute;
+	left:-28px;
+	top:-20px;
+}
+/* 右耳 */
+.right_ear{
+	width:50px;
+	height:40px;
+	border:2px solid #000;
+	-webkit-border-radius:30px 5px 40px 5px;
+	-moz-border-radius:30px 5px 40px 5px;
+	border-radius: 30px 5px 40px 5px;
+	-webkit-transform:rotate(7deg);
+	-moz-transform:rotate(7deg);
+	-o-transform:rotate(7deg);
+	-ms-transform:rotate(7deg);
+	transform:rotate(7deg);
+	position:absolute;
+	top:-20px;
+	right:20px;
+}
+/* 眼睛 */
+.eyes{
+	position:relative;
+}
+
+.left_eye,.right_eye{
+	width:25px;
+	height:25px;
+	border:2px solid #000;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius:50%;
+	position:absolute;
+}
+.left_eye{
+	top:25px;
+	left:30px;
+}
+
+.right_eye{
+	top:25px;
+	right:30px;
+}
+
+.eyeball{
+	width:10px;
+	height:10px;
+	background-color:#000;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50;
+	border-radius:50%;
+	position:absolute;
+}
+/* 左右眼球 */
+.left_eyeball{
+	right:5px;
+	bottom:5px;
+	-webkit-animation:animations 3s ease-in-out infinite;
+	-moz-animation:animations 3s ease-in-out infinite;
+	-o-animation:animations 3s ease-in-out infinite;
+	-ms-animation:animations 3s ease-in-out infinite;
+	animation:animations 3s ease-in-out infinite;
+	
+}
+
+.right_eyeball{
+	left:5px;
+	bottom:5px;
+	-webkit-animation:animations2 3s ease-in-out infinite;
+	-moz-animation:animations2 3s ease-in-out infinite;
+	-o-animation:animations 3s ease-in-out infinite;
+	-ms-animation:animations 3s ease-in-out infinite;
+	animation:animations2 3s ease-in-out infinite;
+}
+
+/* 左眼球运动动画 */
+@-webkit-keyframes animations{
+	0%{transform:translateX(3px) translateY(3px);}
+	50%{transform:translateX(-3px) translateY(-3px);}
+	75%{transform:translateX(3px) translateY(3px);}
+	100%{transform:translateX(0px) translateY(0px);}
+}
+
+@-o-keyframes animations{
+	0%{transform:translateX(3px) translateY(3px);}
+	50%{transform:translateX(-3px) translateY(-3px);}
+	75%{transform:translateX(3px) translateY(3px);}
+	100%{transform:translateX(0px) translateY(0px);}
+}
+
+@-ms-keyframes animations{
+	0%{transform:translateX(3px) translateY(3px);}
+	50%{transform:translateX(-3px) translateY(-3px);}
+	75%{transform:translateX(3px) translateY(3px);}
+	100%{transform:translateX(0px) translateY(0px);}
+}
+
+@-moz-keyframes animations{
+	0%{transform:translateX(3px) translateY(3px);}
+	50%{transform:translateX(-3px) translateY(-3px);}
+	75%{transform:translateX(3px) translateY(3px);}
+	100%{transform:translateX(0px) translateY(0px);}
+}
+
+@keyframes animations{
+	0%{transform:translateX(3px) translateY(3px);}
+	50%{transform:translateX(-3px) translateY(-3px);}
+	100%{transform:translateX(3px) translateY(3px);}
+}
+
+/* 右眼球运动动画 */
+@-webkit-keyframes animations2{
+	0%{transform:translateX(-3px) translateY(3px);}
+	50%{transform:translateX(3px) translateY(-3px);}
+	100%{transform:translateX(-3px) translateY(3px);}
+}
+
+@-o-keyframes animations2{
+	0%{transform:translateX(-3px) translateY(3px);}
+	50%{transform:translateX(3px) translateY(-3px);}
+	100%{transform:translateX(-3px) translateY(3px);}
+}
+
+@-ms-keyframes animations2{
+	0%{transform:translateX(-3px) translateY(3px);}
+	50%{transform:translateX(3px) translateY(-3px);}
+	100%{transform:translateX(-3px) translateY(3px);}
+}
+
+@-moz-keyframes animations2{
+	0%{transform:translateX(-3px) translateY(3px);}
+	50%{transform:translateX(3px) translateY(-3px);}
+	100%{transform:translateX(-3px) translateY(3px);}
+}
+
+@keyframes animations2{
+	0%{transform:translateX(-3px) translateY(3px);}
+	50%{transform:translateX(3px) translateY(-3px);}
+	100%{transform:translateX(-3px) translateY(3px);}
+}
+/*鼻子*/
+.nose{
+	width:50px;
+	height:40px;
+	border:2px solid #000;
+	-webkit-border-radius:50% 50%;
+	-moz-border-radius:50% 50%;
+	border-radius:50% 50%;
+	position:absolute;
+	bottom:20px;
+	left:50px;
+}
+.left_nostril{
+	left:10px;
+	top:15px;
+}
+
+.right_nostril{
+	right:10px;
+	top:15px;
+}
+
+/*身体*/
+.body{
+	width:200px;
+	height:200px;
+	border:2px solid #000;
+	-webkit-border-radius:50% 50%;
+	-moz-border-radius:50% 50%;
+	border-radius:50% 50%;
+	position:absolute;
+	left:-26px;
+	top:73px;
+	border-top-color:transparent;
+	z-index:-2;
+}
+
+/*脚*/
+.left_foot,.right_foot{
+	width:50px;
+	height:25px;
+	border:2px solid #000;
+	-webkit-border-radius:0 0 50px 50px;
+	-moz-border-radius:0 0 50px 50px;
+	border-radius: 0 0 50px 50px;
+	position:absolute;
+}
+
+.left_foot{
+	left:18px;
+	top:259px;
+}
+
+.right_foot{
+	top:259px;
+	left:80px;
+}

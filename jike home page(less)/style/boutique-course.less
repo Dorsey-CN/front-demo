@@ -1,0 +1,101 @@
+/*精品课程*/
+
+.boutique-course {
+    margin-top: 40px;
+    color: @color-gray2;
+    font-family: @family;
+    boutique-head h2{
+    	.h2;
+    }
+    .boutique-content{
+    	.item-box {
+		    float: left;
+		    width: 205px;
+		    .border;
+		    margin-right: 10px;
+		    padding: 20px 15px;
+		    position: relative;
+		    cursor: pointer;
+		    &:hover {
+			    border-color: @main-color;
+			}
+			h4 {
+			    font-weight: normal;
+			    font-size: 14px;
+			    margin-bottom: 15px;
+			}
+			.info {
+			    padding-top: 15px;
+			}
+			.collection {
+			    display: inline-block;
+			    .wid-len(60px,20px);
+			    background-color: @main-color;
+			    color: @color-white;
+			    text-align: center;
+			    line-height: 20px;
+			    float: right;
+				border-radius: 3px;
+			    cursor: pointer;
+			    &:hover {
+				    background-color: #66D178;
+				}
+			}
+    	}
+    	.img-box img {
+		    display: block;
+		    width: 193px;
+		    margin: 0 auto;
+		}
+		.course-info {
+		    position: absolute;
+		    left: 0%;
+		    top: 0;
+		    background-color: @color-white;
+		    opacity: 0.9;
+		    padding-top: 20px;
+		    padding-bottom: 20px;
+		    display: none;
+		    a {
+			    color: @color-gray;
+			    &:hover {
+				    color: @main-color;
+				}
+			}
+			.head {
+			    .wid-len(50px,50px);
+			    border-radius: 50%;
+			    margin: 0 auto;
+			    overflow: hidden;
+				img {
+					.wid-len(50px,50px);
+				}
+			}
+			.name {
+				width: 50px;
+				margin: 10px auto;
+			}
+			.text {
+				height: 40px;
+				line-height: 20px;
+				padding: 0 15px;
+				overflow: hidden;
+				margin-bottom: 20px;
+			}
+			.study-btn {
+				display: block;
+				margin: 0 auto;
+				.wid-len(100px,30px);
+				line-height: 30px;
+				text-align: center;
+				background-color: @main-color;
+				color: @color-white;
+				font-size: 14px;
+				cursor: pointer;
+				&:hover {
+					background-color: #66D178;
+				}
+			}
+		}
+	}
+}

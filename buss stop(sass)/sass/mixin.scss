@@ -1,0 +1,21 @@
+@mixin fl($fl){
+    float:$fl;
+}
+@mixin wid-len($width,$height){
+   width:$width;
+   height:$height;
+}
+@mixin trans($rotate,$translate){
+   -webkit-transform: $rotate $translate;
+   -ms-transform: $rotate $translate;
+   transform: $rotate $translate;
+}
+@mixin init($width,$height,$bgcolor,$size,$color){
+    width:$width;
+    height:$height;
+    line-height:$height;
+    background-color:$bgcolor;
+    font-size:$size;
+    color:$color;
+    text-align:center;
+}

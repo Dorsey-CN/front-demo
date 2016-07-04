@@ -1,0 +1,579 @@
+/*样式重置*/
+
+body,
+div,
+span,
+input,
+ul,
+li,
+a,
+h4,
+i {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	font-size: 13px;
+	background-color: #F9F9F9;
+	font-family: Arial;
+}
+
+input{
+	border:0;
+	outline:none;
+}
+
+a{
+	text-decoration: none;
+	color:#000;
+}
+
+ul li{
+	list-style: none;
+}
+
+/*通用样式*/
+.leftArea{
+	float:left;
+}
+
+.rightArea{
+	float:right;
+}
+
+/*清除浮动*/
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+/*主体样式*/
+
+/*头部样式*/
+.head{
+	height:60px;
+	padding:5px 60px;
+	border-bottom: 1px solid #F3F3F3;
+	background-color: #FCFDFD;
+}
+
+.head span,.imgBox{
+	float:left;
+}
+
+.head span{
+	display: inline-block;
+	margin-right: 20px;
+	line-height: 60px;
+}
+
+.head a:hover{
+	text-decoration: underline;
+}
+
+.head span a{
+	color:#999;
+}
+
+.head .home_page{
+	background-color: #07AC72;
+	color:#fff;
+	width:30px;
+	line-height:15px;
+	margin-top: 15px;
+	padding:3px;
+}
+
+.location{
+	background: url(../images/down.png) right center no-repeat;
+	padding-right: 17px;
+}
+
+.head .home_page a{
+	color:#fff;
+	text-decoration: none;
+}
+
+.head .rightArea span{
+	padding-left: 20px;
+}
+
+.user{
+	background: url(../images/user.png) left center no-repeat;
+}
+
+.email{
+	background: url(../images/email.png) left center no-repeat;
+}
+
+.website{
+	background: url(../images/website.png) left center no-repeat;
+}
+
+.skin{
+	background: url(../images/skin.png) left center no-repeat;
+}
+
+/*搜索区域样式*/
+.search_area{
+	width:80%;
+	margin:0 auto;
+	margin-top: 35px;
+}
+
+.logo_box,
+.search_box,
+.color_box,
+.search_input,
+.search_btn,
+.search_nav li{
+	float:left;
+}
+
+.search_box{
+	margin:0 30px;
+}
+
+.search_box input{
+	border:1px solid #AAA;
+}
+.search_input input{
+	width:540px;
+	height:45px;
+	line-height:45px/9;
+}
+
+.search_btn input{
+	width:120px;
+	height:47px;
+	line-height: 47px;
+	background: -moz-linear-gradient(top, #FDFDFD 0%, #E4E4E4 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F8F8FA), color-stop(100%, #AAA6AD));
+    background: -webkit-linear-gradient(top, #FDFDFD 0%, #E4E4E4 100%);
+    background: linear-gradient(to bottom, #FDFDFD 0%, #E4E4E4 100%);
+    font-size: 18px;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+/*搜索区域导航*/
+.search_box .nav_list{
+	margin-top: 10px;
+}
+
+.search_box .nav_list li{
+	margin-right: 20px;
+}
+
+.search_box .nav_list .active{
+	color:#FF0000;
+}
+
+.search_box .nav_list a{
+	color:#666;
+}
+
+.search_box .nav_list a:hover{
+	color:#ff3300;
+	text-decoration: underline;
+}
+
+.search_nav .more{
+	float: right;
+	margin-top:-15px;
+}
+
+.search_nav .more a{
+	color:#34A637;
+}
+
+.search_nav .more a:hover{
+	text-decoration: underline;
+}
+
+/*颜色选择区域*/
+.color_box{
+	margin-top: 5px;
+}
+
+.color_box h4{
+	margin-bottom: 5px;
+}
+
+.color_box span{
+	display: inline-block;
+	width:20px;
+	height: 20px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	cursor:pointer;
+}
+
+.first_color{
+	background-color: red;
+}
+
+.second_color{
+	background-color: #118850;
+}
+
+.third_color{
+	background-color: #FF5500;
+}
+
+.fourth_color{
+	background-color: #1D7AD9;
+}
+
+.fifth_color{
+	background-color: #AE81DD;
+}
+
+/*内容区*/
+.content_box{
+	width:90%;
+	margin:0 auto;
+	margin-top: 30px;
+}
+
+/*主导航区*/
+.nav{
+	width:100%;
+}
+
+.nav li{
+	float: left;
+	width:9%;
+	height:40px;
+	line-height: 40px;
+	text-align: center;
+	border-bottom: 1px solid #EAEAEA;
+	background-color: #019D64;
+}
+
+.nav li a{
+	font-size: 16px;
+	color:#fff;
+	font-weight:bold;
+}
+.nav li a:hover{
+	color:#000;
+}
+
+.nav .active{
+	background-color: #017C56;
+}
+
+.nav .active a{
+	color:#fff;
+}
+
+.nav .active a:hover{
+	color:#fff;
+}
+
+/*主内容区*/
+.content{
+	margin-top: 10px;
+}
+
+/*内容区左侧样式*/
+.content .leftArea{
+	width:24%;
+}
+
+.content .nav_box{
+	margin-top: 10px;
+	background-color: #fff;
+	border-bottom: 1px solid #EBEBEB;
+	padding-bottom: 10px;
+}
+
+.content .nav_box li{
+	float: left;
+	width:42%;
+	padding-left: 20px;
+}
+
+.content .nav_box li a{
+	color:#333333;
+	font-family: "Microsoft YaHei","微软雅黑";
+	font-size: 15px;
+}
+
+.content .nav_box li a:hover{
+	color:#FF5500;
+	text-decoration: underline;
+}
+
+.nav_box li .split{
+	color:#999;
+}
+
+.nav_box li i{
+	display:inline-block;
+	width:20px;
+	height: 20px;
+	position: relative;
+	top:2px;
+}
+
+.nav_box [class*=i_]{
+	background:url(../images/small-icon.png) left center no-repeat;
+}
+
+
+.nav_box .i_tv{
+	background-position: -20px -97px;
+}
+
+.nav_box .i_game{
+	background-position: -20px -299px;
+}
+
+.nav_box .i_movie{
+	background-position: -20px -158px;
+}
+
+.nav_box .i_animation{
+	background-position: -20px -379px;
+}
+
+.nav_box .i_hot{
+	background-position: -20px -98px;
+}
+
+.nav_box .i_travel{
+	background-position: -20px -259px;
+}
+
+.nav_box .i_lottery{
+	background-position: -20px -18px;
+}
+
+.nav_box .i_funny{
+	background-position: -20px -118px;
+}
+
+.nav_box .i_phone{
+	background-position: -20px -279px;
+}
+
+.nav_box .i_educate{
+	background-position: -20px -359px;
+}
+
+.nav_tab{
+	margin-top: 10px;
+}
+
+.nav_tab .tab{
+	margin-bottom: 5px;
+}
+.nav_tab li{
+	float:left;
+	width:20%;
+	text-align: center;
+}
+
+.nav_tab li a{
+	font-family: "Microsoft YaHei","微软雅黑";
+	font-size: 15px;
+	color:#616161;
+}
+
+.nav_tab li a:hover{
+	color:#118850;
+	text-decoration: underline;
+}
+
+.nav_tab .active{
+	border-top: 1px solid #118850;
+}
+
+/*内容区右侧样式*/
+.content .rightArea{
+	width:75%;
+}
+
+/*网址导航样式*/
+.rightArea .websites{
+	background-color: #fff;
+	border:1px solid #AADDBB;
+}
+
+/*一级网址导航*/
+.websites .first_websites{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #F0F0F0; 
+}
+
+.websites .second_websites{
+	padding: 10px 0;
+}
+
+.websites li{
+	float:left;
+	width:16%;
+	text-align: center;
+	line-height: 25px;
+}
+
+.websites li a{
+	font-size: 14px;
+}
+
+.websites li a:hover{
+	color:#FF5500;
+	text-decoration: underline;
+}
+
+.first_websites li i{
+	display: inline-block;
+	width:20px;
+	height:20px;
+	position: relative;
+	top:3px;
+}
+
+/*为一级网址设置icon图标*/
+.first_websites [class*=site-]{
+	background:url(../images/icon.png) left top no-repeat;
+}
+
+.first_websites .site-baidu{
+	background-position: 0 -196px;
+}
+
+.first_websites .site-sina{
+	background-position: 0 -277px;
+}
+
+.first_websites .site-sohu{
+	background-position: 0 -316px;
+}
+
+.first_websites .site-tencent{
+	background-position: 0 -36px;
+}
+
+.first_websites .site-netEase{
+	background-position: 0 -156px;
+}
+
+.first_websites .site-youku{
+	background-position: 0 -397px;
+}
+
+.first_websites .site-tmall{
+	background-position: 0 -477px;
+}
+
+.first_websites .site-phoenix{
+	background-position: 0 -237px;
+}
+
+.first_websites .site-taoBao{
+	background-position: 0 -356px;
+}
+
+.first_websites .site-game4399{
+	background-position: 0 2px;
+}
+
+.first_websites .site-carHome{
+	background-position: 0 -518px;
+}
+
+.first_websites .site-lottery{
+	background-position: 0 -557px;
+}
+
+.first_websites [class*=site_]{
+	position: relative;
+	top:7px;
+}
+
+.first_websites .site_freeGame{
+	background:url(../images/game.png) left top no-repeat;
+	
+}
+
+.first_websites .site_xinhua{
+	background:url(../images/renmin.png) left top no-repeat;
+}
+
+.first_websites .site_jingDong{
+	background:url(../images/jingdong.png) left top no-repeat;
+}
+
+.first_websites .site_juHuaSuan{
+	background:url(../images/juhuasuan.png) left top no-repeat;
+}
+
+.first_websites .site_special{
+	background:url(../images/special.png) left top no-repeat;
+}
+
+.first_websites .site_movie123{
+	background:url(../images/hao123.png) left top no-repeat;
+}
+
+/*二级网址导航*/
+.second_websites .active{
+	color:#118850;
+}
+
+/*猜你喜欢区域样式*/
+.guess_like{
+	margin-top: 10px;
+	border:1px solid #CECECE;
+	padding: 30px 0;
+	background-color: #fff;
+}
+
+.guess_list_box{
+	float: left;
+	width:95%;
+}
+
+.guess_like span{
+	display: inline-block;
+	/*height:60px;*/
+	color:#fff;
+	background-color: #B0DEC0;
+	font-size: 14px;
+	width: 14px;
+	padding:3px;
+	float: left;
+}
+
+.guess_like li{
+	float:left;
+	width:12%;
+	text-align: center;
+	line-height: 25px;
+}
+
+.guess_like li a{
+	font-size: 14px;
+	color:#333;
+}
+
+.guess_like li a:hover{
+	color:#FF5500;
+	text-decoration: underline;
+}
+
+.guess_like .classification{
+	color:#118850;
+}
